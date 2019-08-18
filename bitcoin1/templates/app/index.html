@@ -2,1266 +2,184 @@
 
 {% block inner %}
 <div id="wp" class="wp">
-<style id="diy_style" type="text/css"></style>
-<div class="wp">
-<div id="diy1" class="area"></div>
-</div>
+    <style id="diy_style" type="text/css"></style>
+    <div class="wp">
+        <div id="diy1" class="area"></div>
+    </div>
 
-<div class="sige_z">
-<div class="sige_z_z">
-<div id="diyslides" class="area"></div>
-</div>
-<div class="sige_z_y">
-<div id="diyheadline" class="area"></div>
-</div>
-<div class="clear"></div>
-<div id="diyimg" class="area"></div>
-</div>
-<script src="template/bygsjw/image/js/jquery.min.js" type="text/javascript"></script>
-<script src="template/bygsjw/image/js/slide.js" type="text/javascript"></script>
-<script type="text/javascript">
-var jq = jQuery.noConflict();
-jQuery(document).ready(function(){
-TouchSlide({
-slideCell:"#byg_slide",
-mainCell:".slide_bd ul",
-titCell:".slide_hd ul",
-effect:"leftLoop",
-autoPage:true,
-autoPlay:true,
-interTime:3500
-});
-});
-</script>
-<script src="template/bygsjw/image/js/headline.js" type="text/javascript"></script>
-<div class="sige_y">
-<div id="diytab" class="area"></div>
-</div>
-<div class="clear"></div>
-<div id="ct" class="wp cl">
-<div class="mn">
-<div id="diyimgtext" class="area"></div>
-<div id="diyxin1" class="area"></div>
+    <div class="sige_z">
+        <div class="sige_z_z">
+            <div id="diyslides" class="area"></div>
+        </div>
+        <div class="sige_z_y">
+            <div id="diyheadline" class="area"></div>
+        </div>
+        <div class="clear"></div>
+        <div id="diyimg" class="area"></div>
+    </div>
+    <script src="template/bygsjw/image/js/jquery.min.js" type="text/javascript"></script>
+    <script src="template/bygsjw/image/js/slide.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var jq = jQuery.noConflict();
+        jQuery(document).ready(function () {
+            TouchSlide({
+                slideCell: "#byg_slide",
+                mainCell: ".slide_bd ul",
+                titCell: ".slide_hd ul",
+                effect: "leftLoop",
+                autoPage: true,
+                autoPlay: true,
+                interTime: 3500
+            });
+        });
+    </script>
+    <script src="template/bygsjw/image/js/headline.js" type="text/javascript"></script>
+    <div class="sige_y">
+        <div id="diytab" class="area"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="ct" class="wp cl">
+        <div class="mn">
+            <div id="diyimgtext" class="area"></div>
+            <div id="diyxin1" class="area"></div>
 
-<div id="chart" class="bm bw0 cl">
-<ul class="z">
-<li class="today">今日: <em>1752</em></li>
-<li class="yesterday">昨日: <em>0</em></li>
-<li class="posts">帖子: <em>60080</em></li>
-<li class="members">会员: <em>5721</em></li>
-<li class="new_members">欢迎新会员: <em><a href="home.php?mod=space&amp;username=%E5%B8%81%E8%9B%8B" target="_blank" class="xi2">币蛋</a></em></li></ul>
-<div class="z"></div>
-<div class="y">
-<a href="forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
-</div>
-<div id="diy_chart" class="area"></div>
-<div class="fl bm">
-<div class="bm bmw  cl">
-<div class="bm_h cl">
+            <div id="chart" class="bm bw0 cl">
+                <ul class="z">
+                    <li class="today">今日: <em>1752</em></li>
+                    <li class="yesterday">昨日: <em>0</em></li>
+                    <li class="posts">帖子: <em>60080</em></li>
+                    <li class="members">会员: <em>5721</em></li>
+                    <li class="new_members">欢迎新会员: <em><a href="home.php?mod=space&amp;username=%E5%B8%81%E8%9B%8B"
+                                                          target="_blank" class="xi2">币蛋</a></em></li>
+                </ul>
+                <div class="z"></div>
+                <div class="y">
+                    <a href="forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
+            </div>
+            <div id="diy_chart" class="area"></div>
+            <div class="fl bm">
+                {% for bt in btitles %}
+
+                <div class="bm bmw  cl">
+                    <div class="bm_h cl">
 <span class="o">
-<img id="category_1_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_1');">
+<img id="category_1_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开"
+     onclick="toggle_collapse('category_1');">
 </span>
-<h2><a href="forum.php?gid=1" style="">主流币</a></h2>
-</div>
-<div id="category_1" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=2"><img src="static/image/common/forum_new.gif" alt="BTC (Bitcoin)-比特币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=2">BTC (Bitcoin)-比特币</a><em class="xw0 xi1" title="今日"> (177)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2"><span title="14095">1万</span></span><span class="xg1"> / <span title="14125">1万</span></span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80468&amp;goto=lastpost#lastpost" class="xi2">月入千万， “疯狂”的矿工要飞 ...</a> <cite><span title="2019-8-13 15:55">3&nbsp;小时前</span> <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=36"><img src="static/image/common/forum.gif" alt="ETH (Ethereum)-以太坊"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=36">ETH (Ethereum)-以太坊</a><em class="xw0 xi1" title="今日"> (44)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">543</span><span class="xg1"> / 550</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80372&amp;goto=lastpost#lastpost" class="xi2">POW越来越中心化了，没背景的矿 ...</a> <cite>2019-8-2 09:47 <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=37"><img src="static/image/common/forum.gif" alt="XRP (Ripple)-瑞波币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=37">XRP (Ripple)-瑞波币</a><em class="xw0 xi1" title="今日"> (23)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">338</span><span class="xg1"> / 355</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80378&amp;goto=lastpost#lastpost" class="xi2">POW挖矿越来越难，没有背景的矿 ...</a> <cite>2019-8-2 14:29 <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=38"><img src="static/image/common/forum.gif" alt="BCH (Bitcoin Cash)-比特现金"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=38">BCH (Bitcoin Cash)-比特现金</a><em class="xw0 xi1" title="今日"> (37)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">382</span><span class="xg1"> / 389</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80404&amp;goto=lastpost#lastpost" class="xi2">大手印国际：现货黄金突破1500 ...</a> <cite><span title="2019-8-8 14:05">5&nbsp;天前</span> <a href="home.php?mod=space&amp;username=jiawen123456">jiawen123456</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-</tr>
-</tbody></table>
-</div>
-</div><div class="bm bmw  cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_39_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_39');">
-</span>
-<h2><a href="forum.php?gid=39" style="">区块链</a></h2>
-</div>
-<div id="category_39" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=110"><img src="static/image/common/forum.gif" alt="交易所"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=110">交易所</a><em class="xw0 xi1" title="今日"> (5)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">97</span><span class="xg1"> / 98</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80463&amp;goto=lastpost#lastpost" class="xi2">追币项目周报20190805-20190811 ...</a> <cite><span title="2019-8-13 11:14">8&nbsp;小时前</span> <a href="home.php?mod=space&amp;username=%E8%BF%BD%E5%B8%81%E8%A7%86%E7%82%B9">追币视点</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=105"><img src="static/image/common/forum.gif" alt="区块链"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=105">区块链</a><em class="xw0 xi1" title="今日"> (164)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">967</span><span class="xg1"> / 980</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80464&amp;goto=lastpost#lastpost" class="xi2">美国思维低估了中国法定数字货币 ...</a> <cite><span title="2019-8-13 11:45">7&nbsp;小时前</span> <a href="home.php?mod=space&amp;username=2324647162">2324647162</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=106"><img src="static/image/common/forum.gif" alt="区块链应用"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=106">区块链应用</a><em class="xw0 xi1" title="今日"> (33)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">499</span><span class="xg1"> / 501</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80382&amp;goto=lastpost#lastpost" class="xi2">POW挖矿已经越来越中心化了，背 ...</a> <cite>2019-8-3 15:52 <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=43"><img src="static/image/common/forum.gif" alt="区块链游戏"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=43">区块链游戏</a><em class="xw0 xi1" title="今日"> (29)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">380</span><span class="xg1"> / 382</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80350&amp;goto=lastpost#lastpost" class="xi2">全球区块链游戏生态大会8月2日将 ...</a> <cite>2019-8-1 15:22 <a href="home.php?mod=space&amp;username=abc19377">abc19377</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=112"><img src="static/image/common/forum.gif" alt="Dapp"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=112">Dapp</a><em class="xw0 xi1" title="今日"> (43)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">322</span><span class="xg1"> / 326</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80349&amp;goto=lastpost#lastpost" class="xi2">4SGaming区块链娱乐平台DAPPGame ...</a> <cite>2019-8-1 15:31 <a href="home.php?mod=space&amp;username=4SGaming">4SGaming</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-</tr>
-</tbody></table>
-</div>
-</div><div class="bm bmw  cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_107_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_107');">
-</span>
-<h2><a href="forum.php?gid=107" style="">挖矿&amp;ICO</a></h2>
-</div>
-<div id="category_107" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=108"><img src="static/image/common/forum.gif" alt="挖矿"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=108">挖矿</a><em class="xw0 xi1" title="今日"> (44)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">404</span><span class="xg1"> / 404</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80315&amp;goto=lastpost#lastpost" class="xi2">@所有人 越来越多的矿场大佬纷 ...</a> <cite>2019-7-31 17:05 <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=109"><img src="static/image/common/forum.gif" alt="ICO"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=109">ICO</a><em class="xw0 xi1" title="今日"> (10)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">173</span><span class="xg1"> / 173</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80293&amp;goto=lastpost#lastpost" class="xi2">云一资讯 | 大量受监管的token销 ...</a> <cite>2019-7-31 11:09 <a href="home.php?mod=space&amp;username=mojito">mojito</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-</tr>
-</tbody></table>
-</div>
-</div><div class="bm bmw  cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_40_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_40');">
-</span>
-<h2><a href="forum.php?gid=40" style="">山寨币</a></h2>
-</div>
-<div id="category_40" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=113"><img src="static/image/common/forum.gif" alt="山寨币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=113">山寨币</a><em class="xw0 xi1" title="今日"> (39)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2"><span title="32320">3万</span></span><span class="xg1"> / <span title="32325">3万</span></span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80395&amp;goto=lastpost#lastpost" class="xi2">POW挖矿已成为中心化的垄断产业 ...</a> <cite><span title="2019-8-6 15:44">7&nbsp;天前</span> <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=42"><img src="static/image/common/forum.gif" alt="EOS-柚子"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=42">EOS-柚子</a><em class="xw0 xi1" title="今日"> (38)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">529</span><span class="xg1"> / 533</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80287&amp;goto=lastpost#lastpost" class="xi2">EOS原力第53期开发周报</a> <cite>2019-7-31 09:33 <a href="home.php?mod=space&amp;username=drummer">drummer</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=44"><img src="static/image/common/forum.gif" alt="XLM (Stellar)-恒星币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=44">XLM (Stellar)-恒星币</a><em class="xw0 xi1" title="今日"> (9)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">143</span><span class="xg1"> / 144</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80122&amp;goto=lastpost#lastpost" class="xi2">OK Reasherch:莱特币(LTC)现状调 ...</a> <cite>2019-7-25 20:36 <a href="home.php?mod=space&amp;username=WUnxjIDb">WUnxjIDb</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=45"><img src="static/image/common/forum.gif" alt="LTC (Litecoin)-莱特币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=45">LTC (Litecoin)-莱特币</a><em class="xw0 xi1" title="今日"> (37)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">237</span><span class="xg1"> / 238</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80231&amp;goto=lastpost#lastpost" class="xi2">OKEx上线LTC藏宝图活动，怎么玩 ...</a> <cite>2019-7-30 16:29 <a href="home.php?mod=space&amp;username=%E8%91%A1%E8%90%84%E7%B4%AB%E4%BA%86">葡萄紫了</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=41"><img src="static/image/common/forum.gif" alt="ADA (Cardano)-艾达币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=41">ADA (Cardano)-艾达币</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">81</span><span class="xg1"> / 81</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79814&amp;goto=lastpost#lastpost" class="xi2">【ADA艾达币咨询】2019是购买卡 ...</a> <cite>2019-7-20 20:39 <a href="home.php?mod=space&amp;username=dz9527">dz9527</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=46"><img src="static/image/common/forum.gif" alt="USDT (Tether USD)-泰达币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=46">USDT (Tether USD)-泰达币</a><em class="xw0 xi1" title="今日"> (38)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">310</span><span class="xg1"> / 310</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80289&amp;goto=lastpost#lastpost" class="xi2">Max巨鲸:为何丑闻百出的USDT还在 ...</a> <cite>2019-7-31 10:11 <a href="home.php?mod=space&amp;username=yixin66">yixin66</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=47"><img src="static/image/common/forum.gif" alt="XMR (Monero)-门罗币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=47">XMR (Monero)-门罗币</a><em class="xw0 xi1" title="今日"> (12)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">150</span><span class="xg1"> / 154</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80284&amp;goto=lastpost#lastpost" class="xi2">Monero vs ZCash ——最全面的隐 ...</a> <cite>2019-7-31 08:20 <a href="home.php?mod=space&amp;username=disconnect">disconnect</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=48"><img src="static/image/common/forum.gif" alt="MIOTA (IOTA)-埃欧塔"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=48">MIOTA (IOTA)-埃欧塔</a><em class="xw0 xi1" title="今日"> (19)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">168</span><span class="xg1"> / 168</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80294&amp;goto=lastpost#lastpost" class="xi2">区块链词典</a> <cite>2019-7-31 11:50 <a href="home.php?mod=space&amp;username=optimol">optimol</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=49"><img src="static/image/common/forum.gif" alt="TRX (Tron)-波场"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=49">TRX (Tron)-波场</a><em class="xw0 xi1" title="今日"> (40)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">344</span><span class="xg1"> / 344</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80296&amp;goto=lastpost#lastpost" class="xi2">肾结石还是边控?波场少年孙宇晨 ...</a> <cite>2019-7-31 12:25 <a href="home.php?mod=space&amp;username=ppkart">ppkart</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=50"><img src="static/image/common/forum.gif" alt="ETC (Ethereum Classic)-以太经典"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=50">ETC (Ethereum Classic)-以太经典</a><em class="xw0 xi1" title="今日"> (5)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">102</span><span class="xg1"> / 102</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80129&amp;goto=lastpost#lastpost" class="xi2">数字货币入门知识第五十四课 ...</a> <cite>2019-7-26 01:45 <a href="home.php?mod=space&amp;username=wachyi11">wachyi11</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=51"><img src="static/image/common/forum.gif" alt="BNB (Binance Coin)-币安币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=51">BNB (Binance Coin)-币安币</a><em class="xw0 xi1" title="今日"> (36)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">268</span><span class="xg1"> / 269</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80217&amp;goto=lastpost#lastpost" class="xi2">BNB销毁计划:其实就是无风险套现 ...</a> <cite>2019-7-29 23:56 <a href="home.php?mod=space&amp;username=dodonet">dodonet</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=52"><img src="static/image/common/forum.gif" alt="DASH (DASH)-达世币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=52">DASH (DASH)-达世币</a><em class="xw0 xi1" title="今日"> (42)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">358</span><span class="xg1"> / 363</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80328&amp;goto=lastpost#lastpost" class="xi2">区块链100之41-60问</a> <cite>2019-8-1 04:59 <a href="home.php?mod=space&amp;username=conanwchen2">conanwchen2</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=53"><img src="static/image/common/forum.gif" alt="NEO-小蚁"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=53">NEO-小蚁</a><em class="xw0 xi1" title="今日"> (38)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">311</span><span class="xg1"> / 317</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80334&amp;goto=lastpost#lastpost" class="xi2">区块链投资的5%法则</a> <cite>2019-8-1 05:57 <a href="home.php?mod=space&amp;username=mrjixiang">mrjixiang</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=63"><img src="static/image/common/forum.gif" alt="ONT (Ontology)-本体"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=63">ONT (Ontology)-本体</a><em class="xw0 xi1" title="今日"> (23)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">230</span><span class="xg1"> / 236</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80330&amp;goto=lastpost#lastpost" class="xi2">Zeux携手众多数字货币行业巨头, ...</a> <cite>2019-8-1 05:01 <a href="home.php?mod=space&amp;username=%E5%B0%8F%E5%9D%8F%E8%9B%8B.%E5%A4%A7%E5%9D%8F%E8%9B%8B">小坏蛋.大坏蛋</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=54"><img src="static/image/common/forum.gif" alt="XEM-新经币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=54">XEM-新经币</a><em class="xw0 xi1" title="今日"> (3)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">86</span><span class="xg1"> / 86</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79394&amp;goto=lastpost#lastpost" class="xi2">【项目动态】新经币(XEM)和去中 ...</a> <cite>2019-7-15 21:09 <a href="home.php?mod=space&amp;username=%E9%9F%B3%E4%B9%90%E6%97%A0%E6%9E%81%E9%99%90">音乐无极限</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=55"><img src="static/image/common/forum.gif" alt="VET (VeChain)-唯链"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=55">VET (VeChain)-唯链</a><em class="xw0 xi1" title="今日"> (9)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">78</span><span class="xg1"> / 78</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79626&amp;goto=lastpost#lastpost" class="xi2">公告丨唯链推出dApps开发者奖励 ...</a> <cite>2019-7-19 04:48 <a href="home.php?mod=space&amp;username=%E7%9F%A5%E9%9F%B3axalergs">知音axalergs</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=56"><img src="static/image/common/forum.gif" alt="BEC (Beauty Chain)-美币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=56">BEC (Beauty Chain)-美币</a><em class="xw0 xi1" title="今日"> (20)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">135</span><span class="xg1"> / 135</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80337&amp;goto=lastpost#lastpost" class="xi2">【三年级学剑桥英语晚吗】等到初 ...</a> <cite>2019-8-1 06:37 <a href="home.php?mod=space&amp;username=xiaoyatouwoaini">xiaoyatouwoaini</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=57"><img src="static/image/common/forum.gif" alt="XTZ (Tezos)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=57">XTZ (Tezos)</a><em class="xw0 xi1" title="今日"> (22)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">193</span><span class="xg1"> / 194</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80333&amp;goto=lastpost#lastpost" class="xi2">Tezos(XTZ)将在Coinbase Pro上推 ...</a> <cite>2019-8-1 06:08 <a href="home.php?mod=space&amp;username=%E5%86%B0%E9%BE%99%E5%9C%A8%E7%8E%B0">冰龙在现</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=58"><img src="static/image/common/forum.gif" alt="ZEC (Zcash)-大零币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=58">ZEC (Zcash)-大零币</a><em class="xw0 xi1" title="今日"> (15)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">146</span><span class="xg1"> / 147</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80055&amp;goto=lastpost#lastpost" class="xi2">ZEC币是什么?怎么挖ZEC?收益怎么 ...</a> <cite>2019-7-24 15:13 <a href="home.php?mod=space&amp;username=nanshengnv">nanshengnv</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=59"><img src="static/image/common/forum.gif" alt="GRAMS (Telegram)-电报"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=59">GRAMS (Telegram)-电报</a><em class="xw0 xi1" title="今日"> (38)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">312</span><span class="xg1"> / 312</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80335&amp;goto=lastpost#lastpost" class="xi2">2019年7月25日(周四)早安香港 ...</a> <cite>2019-8-1 06:01 <a href="home.php?mod=space&amp;username=aquila00">aquila00</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=60"><img src="static/image/common/forum.gif" alt="OKB OKEX全球通用积分"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=60">OKB OKEX全球通用积分</a><em class="xw0 xi1" title="今日"> (41)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">278</span><span class="xg1"> / 280</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80338&amp;goto=lastpost#lastpost" class="xi2">交易平台平台币该不该买?解读各 ...</a> <cite>2019-8-1 06:20 <a href="home.php?mod=space&amp;username=geinew">geinew</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=61"><img src="static/image/common/forum.gif" alt="OMG (OmiseGO)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=61">OMG (OmiseGO)</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">141</span><span class="xg1"> / 150</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80279&amp;goto=lastpost#lastpost" class="xi2">想不到的阴谋?!看完才能过好周末 ...</a> <cite>2019-7-31 06:21 <a href="home.php?mod=space&amp;username=liuzengqiang_">liuzengqiang_</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=62"><img src="static/image/common/forum.gif" alt="FIL (Filecoin)-IPFS"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=62">FIL (Filecoin)-IPFS</a><em class="xw0 xi1" title="今日"> (33)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">333</span><span class="xg1"> / 348</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80339&amp;goto=lastpost#lastpost" class="xi2">为何IPFS爱好者都说Filecoin是百 ...</a> <cite>2019-8-1 07:05 <a href="home.php?mod=space&amp;username=sunbfs">sunbfs</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=64"><img src="static/image/common/forum.gif" alt="MOAC-墨客"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=64">MOAC-墨客</a><em class="xw0 xi1" title="今日"> (22)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">214</span><span class="xg1"> / 219</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80340&amp;goto=lastpost#lastpost" class="xi2">强强联手 | 恭喜墨客与网易达成 ...</a> <cite>2019-8-1 06:34 <a href="home.php?mod=space&amp;username=%E5%8D%8E%E4%B8%AD%E4%BA%92%E8%81%94">华中互联</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=65"><img src="static/image/common/forum.gif" alt="LSK (Lisk)-应用链"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=65">LSK (Lisk)-应用链</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">57</span><span class="xg1"> / 58</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80212&amp;goto=lastpost#lastpost" class="xi2">今日币圈快讯 | 美国电信巨头Ver ...</a> <cite>2019-7-29 14:56 <a href="home.php?mod=space&amp;username=zhodoo">zhodoo</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=66"><img src="static/image/common/forum.gif" alt="HT (Huobi Token)-火币全球生态通证"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=66">HT (Huobi Token)-火币全球生态通证</a><em class="xw0 xi1" title="今日"> (69)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">376</span><span class="xg1"> / 379</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80341&amp;goto=lastpost#lastpost" class="xi2">数字货币行情分析</a> <cite>2019-8-1 07:30 <a href="home.php?mod=space&amp;username=ffkkd1">ffkkd1</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=67"><img src="static/image/common/forum.gif" alt="QTUM-量子链"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=67">QTUM-量子链</a><em class="xw0 xi1" title="今日"> (38)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">330</span><span class="xg1"> / 336</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80367&amp;goto=lastpost#lastpost" class="xi2">冬 季 小 语</a> <cite>2019-8-2 05:20 <a href="home.php?mod=space&amp;username=%E5%AD%A4%E8%A1%97%E6%B5%AA%E4%BA%BA">孤街浪人</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=68"><img src="static/image/common/forum.gif" alt="ZRX (0xProject)-0x协议"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=68">ZRX (0xProject)-0x协议</a><em class="xw0 xi1" title="今日"> (4)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">86</span><span class="xg1"> / 86</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79512&amp;goto=lastpost#lastpost" class="xi2">0x协议的治理:路线图、时间线和Z ...</a> <cite>2019-7-18 02:33 <a href="home.php?mod=space&amp;username=%E6%97%B6%E9%97%B4%E7%9A%84%E8%B6%B3%E8%BF%B9">时间的足迹</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=69"><img src="static/image/common/forum.gif" alt="BTG (Bitcoin Gold)-比特币黄金"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=69">BTG (Bitcoin Gold)-比特币黄金</a><em class="xw0 xi1" title="今日"> (11)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">130</span><span class="xg1"> / 130</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80219&amp;goto=lastpost#lastpost" class="xi2">50个曾经明星项目,沦为被扣上“ ...</a> <cite>2019-7-30 02:07 <a href="home.php?mod=space&amp;username=615871570">615871570</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=70"><img src="static/image/common/forum.gif" alt="BCN (Bytecoin)-字节币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=70">BCN (Bytecoin)-字节币</a><em class="xw0 xi1" title="今日"> (6)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">31</span><span class="xg1"> / 31</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79151&amp;goto=lastpost#lastpost" class="xi2">埋伏风向标263期 罗永浩抄币去吧 ...</a> <cite>2019-7-13 22:22 <a href="home.php?mod=space&amp;username=iemqj.xiao">iemqj.xiao</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=72"><img src="static/image/common/forum.gif" alt="DCR (Decred)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=72">DCR (Decred)</a><em class="xw0 xi1" title="今日"> (14)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">116</span><span class="xg1"> / 116</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80299&amp;goto=lastpost#lastpost" class="xi2">区块链的共识机制到底是什么,看 ...</a> <cite>2019-7-31 12:39 <a href="home.php?mod=space&amp;username=ffuuuu">ffuuuu</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=71"><img src="static/image/common/forum.gif" alt="BCD (Bitcoin Diamond)-比特币钻石"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=71">BCD (Bitcoin Diamond)-比特币钻石</a><em class="xw0 xi1" title="今日"> (14)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">132</span><span class="xg1"> / 132</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80222&amp;goto=lastpost#lastpost" class="xi2">欠钱不还是不对的,欠比特币不还 ...</a> <cite>2019-7-30 06:13 <a href="home.php?mod=space&amp;username=ncppcn">ncppcn</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=74"><img src="static/image/common/forum.gif" alt="BTS (BitShares)-比特股"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=74">BTS (BitShares)-比特股</a><em class="xw0 xi1" title="今日"> (14)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">109</span><span class="xg1"> / 109</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79953&amp;goto=lastpost#lastpost" class="xi2">区块讲堂 | EOS与BM之缘</a> <cite>2019-7-23 03:39 <a href="home.php?mod=space&amp;username=azVcMWsP">azVcMWsP</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=73"><img src="static/image/common/forum.gif" alt="DOGE (DogeCoin)-狗狗币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=73">DOGE (DogeCoin)-狗狗币</a><em class="xw0 xi1" title="今日"> (10)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">134</span><span class="xg1"> / 136</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79822&amp;goto=lastpost#lastpost" class="xi2">从表情包到数字货币元老--DOGE的 ...</a> <cite>2019-7-20 23:50 <a href="home.php?mod=space&amp;username=huangxinkai1982">huangxinkai1982</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=75"><img src="static/image/common/forum.gif" alt="ZB (ZB Blockchain)-ZB生态"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=75">ZB (ZB Blockchain)-ZB生态</a><em class="xw0 xi1" title="今日"> (30)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">209</span><span class="xg1"> / 211</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80303&amp;goto=lastpost#lastpost" class="xi2">TokenInsight 对话首席——交易 ...</a> <cite>2019-7-31 14:04 <a href="home.php?mod=space&amp;username=%E7%B2%BE%E7%81%B5%E6%B0%B4%E4%BB%99">精灵水仙</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=76"><img src="static/image/common/forum.gif" alt="ZIL (Zilliqa)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=76">ZIL (Zilliqa)</a><em class="xw0 xi1" title="今日"> (7)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">77</span><span class="xg1"> / 79</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80304&amp;goto=lastpost#lastpost" class="xi2">分片和Scilla智能合约,Zilliqa依 ...</a> <cite>2019-7-31 13:46 <a href="home.php?mod=space&amp;username=walkerxk">walkerxk</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=82"><img src="static/image/common/forum.gif" alt="ICX (ICON)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=82">ICX (ICON)</a><em class="xw0 xi1" title="今日"> (6)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">72</span><span class="xg1"> / 74</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80226&amp;goto=lastpost#lastpost" class="xi2">《大佛顶首楞严咒》注音版、视频 ...</a> <cite>2019-7-30 14:07 <a href="home.php?mod=space&amp;username=huinxhui">huinxhui</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=77"><img src="static/image/common/forum.gif" alt="NANO (Nano)-纳诺"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=77">NANO (Nano)-纳诺</a><em class="xw0 xi1" title="今日"> (57)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">346</span><span class="xg1"> / 346</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80312&amp;goto=lastpost#lastpost" class="xi2">树莓派4 PK 英伟达Jetson Nano, ...</a> <cite>2019-7-31 15:56 <a href="home.php?mod=space&amp;username=dddssdvvx">dddssdvvx</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=78"><img src="static/image/common/forum.gif" alt="MKR (Maker)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=78">MKR (Maker)</a><em class="xw0 xi1" title="今日"> (31)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">180</span><span class="xg1"> / 182</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80233&amp;goto=lastpost#lastpost" class="xi2">什么是DAO(去中心化自治组织)? ...</a> <cite>2019-7-30 16:45 <a href="home.php?mod=space&amp;username=%E6%97%A0%E5%90%8D%E6%88%91">无名我</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=79"><img src="static/image/common/forum.gif" alt="DGB (DigiByte)-极特币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=79">DGB (DigiByte)-极特币</a><em class="xw0 xi1" title="今日"> (3)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">42</span><span class="xg1"> / 42</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=78928&amp;goto=lastpost#lastpost" class="xi2">关于(DGB)极特币升级算法分叉的 ...</a> <cite>2019-7-10 05:40 <a href="home.php?mod=space&amp;username=lovejuan007">lovejuan007</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=83"><img src="static/image/common/forum.gif" alt="FT (FCoin Token)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=83">FT (FCoin Token)</a><em class="xw0 xi1" title="今日"> (11)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">70</span><span class="xg1"> / 71</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79231&amp;goto=lastpost#lastpost" class="xi2">千算万算,注册FCoin交易平台最划 ...</a> <cite>2019-7-14 13:48 <a href="home.php?mod=space&amp;username=%E5%85%89%E7%A5%9E%E9%99%8D%E4%B8%B4">光神降临</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=80"><img src="static/image/common/forum.gif" alt="STEEM (STEEM)-斯蒂姆币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=80">STEEM (STEEM)-斯蒂姆币</a><em class="xw0 xi1" title="今日"> (12)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">210</span><span class="xg1"> / 216</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80237&amp;goto=lastpost#lastpost" class="xi2">区块链,将如何重新定义世界? ...</a> <cite>2019-7-30 16:59 <a href="home.php?mod=space&amp;username=piuqrt124">piuqrt124</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=84"><img src="static/image/common/forum.gif" alt="XUC (Exchange Union)-雪币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=84">XUC (Exchange Union)-雪币</a><em class="xw0 xi1" title="今日"> (3)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">27</span><span class="xg1"> / 27</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79088&amp;goto=lastpost#lastpost" class="xi2">就在明天!交易平台联盟直播狂撒 ...</a> <cite>2019-7-13 13:30 <a href="home.php?mod=space&amp;username=hzylhf">hzylhf</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=85"><img src="static/image/common/forum.gif" alt="AE (Aeternity)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=85">AE (Aeternity)</a><em class="xw0 xi1" title="今日"> (21)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">208</span><span class="xg1"> / 208</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80314&amp;goto=lastpost#lastpost" class="xi2">7月30日-æternity Crypto基金会 ...</a> <cite>2019-7-31 16:24 <a href="home.php?mod=space&amp;username=aiwanren">aiwanren</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=86"><img src="static/image/common/forum.gif" alt="WAVES -波币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=86">WAVES -波币</a><em class="xw0 xi1" title="今日"> (10)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">85</span><span class="xg1"> / 91</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80154&amp;goto=lastpost#lastpost" class="xi2">ICO魔幻前传:币圈、兄弟圈、利益 ...</a> <cite>2019-7-27 00:01 <a href="home.php?mod=space&amp;username=immfdc">immfdc</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=87"><img src="static/image/common/forum.gif" alt="REP (Reputation)-信誉"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=87">REP (Reputation)-信誉</a><em class="xw0 xi1" title="今日"> (2)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">21</span><span class="xg1"> / 21</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=78034&amp;goto=lastpost#lastpost" class="xi2">DeFi Industry Report | 去中心 ...</a> <cite>2019-5-1 16:29 <a href="home.php?mod=space&amp;username=%E5%A1%9E%E6%B1%9F%E5%8D%97">塞江南</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=88"><img src="static/image/common/forum.gif" alt="BAT (Basic Attention Token)-注意力币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=88">BAT (Basic Attention Token)-注意力币</a><em class="xw0 xi1" title="今日"> (9)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">63</span><span class="xg1"> / 63</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80317&amp;goto=lastpost#lastpost" class="xi2">新型广告平台项目BAT全解析|Cont ...</a> <cite>2019-7-31 17:03 <a href="home.php?mod=space&amp;username=LSWlwmjn">LSWlwmjn</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=89"><img src="static/image/common/forum.gif" alt="XVG (Verge)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=89">XVG (Verge)</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">74</span><span class="xg1"> / 74</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80089&amp;goto=lastpost#lastpost" class="xi2">数字货币市值排行榜前100种币 ...</a> <cite>2019-7-24 20:55 <a href="home.php?mod=space&amp;username=alexadm">alexadm</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=90"><img src="static/image/common/forum.gif" alt="SC (Siacoin)-云储币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=90">SC (Siacoin)-云储币</a></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">48</span><span class="xg1"> / 48</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=78023&amp;goto=lastpost#lastpost" class="xi2">SC,云储币</a> <cite>2019-5-1 14:38 <a href="home.php?mod=space&amp;username=fanfan_880331">fanfan_880331</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=91"><img src="static/image/common/forum.gif" alt="PAI (Project PAI)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=91">PAI (Project PAI)</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">93</span><span class="xg1"> / 93</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80241&amp;goto=lastpost#lastpost" class="xi2">PAI (Oben) 项目分析报告</a> <cite>2019-7-30 18:59 <a href="home.php?mod=space&amp;username=ebainet">ebainet</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=92"><img src="static/image/common/forum.gif" alt="BTM (Bytom)-比原链"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=92">BTM (Bytom)-比原链</a><em class="xw0 xi1" title="今日"> (32)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">160</span><span class="xg1"> / 160</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80318&amp;goto=lastpost#lastpost" class="xi2">PoS百家谈第1期|Bytom段新星:Sta ...</a> <cite>2019-7-31 18:10 <a href="home.php?mod=space&amp;username=charlie814">charlie814</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=93"><img src="static/image/common/forum.gif" alt="STRAT (Stratis)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=93">STRAT (Stratis)</a><em class="xw0 xi1" title="今日"> (23)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">120</span><span class="xg1"> / 120</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80240&amp;goto=lastpost#lastpost" class="xi2">周一/《一周新闻回顾》 ...</a> <cite>2019-7-30 18:18 <a href="home.php?mod=space&amp;username=%E9%98%B3%E4%BB%94">阳仔</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=94"><img src="static/image/common/forum.gif" alt="PPT (Populous)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=94">PPT (Populous)</a><em class="xw0 xi1" title="今日"> (6)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">40</span><span class="xg1"> / 44</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80160&amp;goto=lastpost#lastpost" class="xi2">2019ENR榜单揭晓!21家中国内地企 ...</a> <cite>2019-7-27 09:51 <a href="home.php?mod=space&amp;username=hwwlt">hwwlt</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=95"><img src="static/image/common/forum.gif" alt="SWTC-斯微特"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=95">SWTC-斯微特</a><em class="xw0 xi1" title="今日"> (2)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">26</span><span class="xg1"> / 26</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=78654&amp;goto=lastpost#lastpost" class="xi2">520,有点“小甜甜”</a> <cite>2019-5-20 13:32 <a href="home.php?mod=space&amp;username=guy1268">guy1268</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=96"><img src="static/image/common/forum.gif" alt="NPXS (Pundi X)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=96">NPXS (Pundi X)</a><em class="xw0 xi1" title="今日"> (17)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">70</span><span class="xg1"> / 70</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80320&amp;goto=lastpost#lastpost" class="xi2">三星Galaxy S10集成了Pundi X的 ...</a> <cite>2019-7-31 19:02 <a href="home.php?mod=space&amp;username=%E6%B1%9F%E5%8D%97%E8%AE%BA%E5%9D%9B">江南论坛</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=97"><img src="static/image/common/forum.gif" alt="RHOC (Rchain)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=97">RHOC (Rchain)</a><em class="xw0 xi1" title="今日"> (1)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">58</span><span class="xg1"> / 58</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79371&amp;goto=lastpost#lastpost" class="xi2">「阿拉丁」V形惊天反转,日链Rcha ...</a> <cite>2019-7-15 16:43 <a href="home.php?mod=space&amp;username=%E9%A3%8E%E9%AA%A8%E5%82%B2%E6%B0%94">风骨傲气</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=98"><img src="static/image/common/forum.gif" alt="BIX (BIX token)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=98">BIX (BIX token)</a><em class="xw0 xi1" title="今日"> (8)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">49</span><span class="xg1"> / 49</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80171&amp;goto=lastpost#lastpost" class="xi2">最全平台分红币汇总</a> <cite>2019-7-27 20:50 <a href="home.php?mod=space&amp;username=%E8%B5%A4%E8%84%9A%E6%99%93%E6%B6%9B">赤脚晓涛</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=99"><img src="static/image/common/forum.gif" alt="GNT (Golem)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=99">GNT (Golem)</a><em class="xw0 xi1" title="今日"> (11)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">80</span><span class="xg1"> / 80</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80243&amp;goto=lastpost#lastpost" class="xi2">LTC减半在即,是不是要走来时的路 ...</a> <cite>2019-7-30 19:59 <a href="home.php?mod=space&amp;username=zhangfdell">zhangfdell</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=100"><img src="static/image/common/forum.gif" alt="SNT (Status Network Token)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=100">SNT (Status Network Token)</a><em class="xw0 xi1" title="今日"> (19)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">110</span><span class="xg1"> / 110</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80322&amp;goto=lastpost#lastpost" class="xi2">SntMate国外市场精彩汇</a> <cite>2019-7-31 22:38 <a href="home.php?mod=space&amp;username=floatagfly">floatagfly</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=101"><img src="static/image/common/forum.gif" alt="AION"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=101">AION</a><em class="xw0 xi1" title="今日"> (4)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">50</span><span class="xg1"> / 50</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80170&amp;goto=lastpost#lastpost" class="xi2">PalletONE:一条与Polkadot相比性 ...</a> <cite>2019-7-27 20:51 <a href="home.php?mod=space&amp;username=connie10591">connie10591</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=102"><img src="static/image/common/forum.gif" alt="KMD (Komodo)"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=102">KMD (Komodo)</a><em class="xw0 xi1" title="今日"> (10)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">48</span><span class="xg1"> / 48</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80248&amp;goto=lastpost#lastpost" class="xi2">【StakingScan】Staking百币说第 ...</a> <cite>2019-7-30 21:27 <a href="home.php?mod=space&amp;username=hsscjh">hsscjh</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=103"><img src="static/image/common/forum.gif" alt="MITH (Mithril)-秘银币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=103">MITH (Mithril)-秘银币</a><em class="xw0 xi1" title="今日"> (5)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">40</span><span class="xg1"> / 40</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=79377&amp;goto=lastpost#lastpost" class="xi2">明星们割的韭菜,最低10亿起 ...</a> <cite>2019-7-15 18:09 <a href="home.php?mod=space&amp;username=keneycheng">keneycheng</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_icn">
-<a href="forum.php?mod=forumdisplay&amp;fid=104"><img src="static/image/common/forum.gif" alt="SBTC (Super Bitcoin)-超级比特币"></a>
-</td>
-<td>
-<h2><a href="forum.php?mod=forumdisplay&amp;fid=104">SBTC (Super Bitcoin)-超级比特币</a><em class="xw0 xi1" title="今日"> (4)</em></h2>
-</td>
-<td class="fl_i">
-<span class="xi2">50</span><span class="xg1"> / 50</span></td>
-<td class="fl_by">
-<div>
-<a href="forum.php?mod=redirect&amp;tid=80326&amp;goto=lastpost#lastpost" class="xi2">独家!李笑来骗取上亿后,骗术遭揭 ...</a> <cite>2019-8-1 02:34 <a href="home.php?mod=space&amp;username=edmundchen">edmundchen</a></cite>
-</div>
-</td>
-</tr>
-<tr class="fl_row">
-</tr>
-</tbody></table>
-</div>
-</div>
-</div>
-<div class="wp mtn">
-<div id="diy3" class="area"></div>
-</div>
-<div id="online" class="bm oll">
-<div class="bm_h">
-<span class="o"><a href="forum.php?showoldetails=no#online" title="收起/展开"><img src="static/image/common/collapsed_no.gif" alt="收起/展开"></a></span>
-<h3>
-<strong><a href="home.php?mod=space&amp;do=friend&amp;view=online&amp;type=member">在线会员</a></strong>
-<span class="xs1">- <strong>57</strong> 人在线
+                        <h2><a href="forum.php?gid=1" style="">{{ bt.btitle }}</a></h2>
+
+                    </div>
+                    <div id="category_1" class="bm_c" style="">
+                        <table cellspacing="0" cellpadding="0" class="fl_tb">
+                            <tbody>
+
+                            {% for st in stitles %}
+                            {% if st.bid == bt.bid %}
+                            <tr>
+                                <td class="fl_icn">
+                                    <a href="forum.php?mod=forumdisplay&amp;fid=2"><img
+                                            src="static/image/common/forum_new.gif" alt="BTC (Bitcoin)-比特币"></a>
+                                </td>
+                                <td>
+
+                                    <h2><a href="forum.php?mod=forumdisplay&amp;fid=2">{{ st.stitle }}</a><em
+                                            class="xw0 xi1" title="今日"> (177)</em></h2>
+                                </td>
+                                <td class="fl_i">
+                                    <span class="xi2"><span title="14095">1万</span></span><span class="xg1"> / <span
+                                        title="14125">1万</span></span></td>
+                                <td class="fl_by">
+                                    <div>
+                                        <a href="forum.php?mod=redirect&amp;tid=80468&amp;goto=lastpost#lastpost"
+                                           class="xi2">月入千万， “疯狂”的矿工要飞 ...</a> <cite><span title="2019-8-13 15:55">3&nbsp;小时前</span>
+                                        <a href="home.php?mod=space&amp;username=POC%E7%9F%BF%E5%B7%A5%E4%BA%A4%E6%B5%81%E4%B9%8B%E5%AE%B6">POC矿工交流之家</a></cite>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+
+                            <!--修改至此-->
+                            <tr class="fl_row">
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="bm bmw  cl">
+                    <!--修改至此-->
+                </div>
+            </div>
+            <div class="wp mtn">
+                <div id="diy3" class="area"></div>
+            </div>
+            <div id="online" class="bm oll">
+                <div class="bm_h">
+                    <span class="o"><a href="forum.php?showoldetails=no#online" title="收起/展开"><img
+                            src="static/image/common/collapsed_no.gif" alt="收起/展开"></a></span>
+                    <h3>
+                        <strong><a
+                                href="home.php?mod=space&amp;do=friend&amp;view=online&amp;type=member">在线会员</a></strong>
+                        <span class="xs1">- <strong>57</strong> 人在线
 - <strong>4</strong> 会员(<strong>0</strong> 隐身),
 <strong>53</strong> 位游客
 - 最高记录是 <strong>1164</strong> 于 <strong>2019-7-21</strong>.</span>
-</h3>
+                    </h3>
+                </div>
+                <dl id="onlinelist" class="bm_c">
+                    <dt class="ptm pbm bbda"><img src="static/image/common/online_admin.gif"> 管理员 &nbsp; &nbsp; &nbsp;
+                        <img src="static/image/common/online_supermod.gif"> 超级版主 &nbsp; &nbsp; &nbsp; <img
+                                src="static/image/common/online_moderator.gif"> 版主 &nbsp; &nbsp; &nbsp; <img
+                                src="static/image/common/online_member.gif"> 会员 &nbsp; &nbsp; &nbsp;
+                    </dt>
+                    <dd class="ptm pbm">
+                        <ul class="cl">
+                            <li title="时间: 19:14">
+                                <img src="static/image/common/online_member.gif" alt="icon">
+                                <a href="home.php?mod=space&amp;uid=5709">Stefanan</a>
+                            </li>
+                            <li title="时间: 19:12">
+                                <img src="static/image/common/online_member.gif" alt="icon">
+                                <a href="home.php?mod=space&amp;uid=5609">贾荣婷</a>
+                            </li>
+                            <li title="时间: 19:10">
+                                <img src="static/image/common/online_member.gif" alt="icon">
+                                <a href="home.php?mod=space&amp;uid=5610">翻墙3ccc.cf</a>
+                            </li>
+                            <li title="时间: 19:09">
+                                <img src="static/image/common/online_member.gif" alt="icon">
+                                <a href="home.php?mod=space&amp;uid=5702">JamesNeign</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bm lk">
+                <div id="category_lk" class="bm_c ptm">
+                    <ul class="m mbn cl">
+                        <li class="mbm bbda">
+                            <div class="lk_content"><h5><a href="https://www.aistudyblog.com/" target="_blank">AiStudy人工智能</a>
+                            </h5>
+                                <p>AiStudy人工智能</p></div>
+                        </li>
+                    </ul>
+                    <ul class="x mbm cl">
+                        <li><a href="http://www.400yun.cn" target="_blank" title="400电话申请">400电话申请</a></li>
+                        <li><a href="http://www.seidon.club" target="_blank" title="区块链博客">区块链博客</a></li>
+                        <li><a href="http://www.wbi.cn/" target="_blank" title="虚拟币">虚拟币</a></li>
+                        <li><a href="http://www.wbi.cn/" target="_blank" title="区块链">区块链</a></li>
+                        <li><a href="http://www.wbi.cn/" target="_blank" title="比特币">比特币</a></li>
+                        <li><a href="http://hao.21bm.com" target="_blank" title="hao123导航">hao123导航</a></li>
+                        <li><a href="http://www.beezhi.com" target="_blank" title="区块链">区块链</a></li>
+                        <li><a href="http://www.xiaojiucai.vip" target="_blank" title="小韭菜">小韭菜</a></li>
+                        <li><a href="http://www.licaiqihuo.cn" target="_blank" title="微期货">微期货</a></li>
+                        <li><a href="http://www.nbcoin.cn/" target="_blank" title="牛币网">牛币网</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>fixed_top_nv();</script>
 </div>
-<dl id="onlinelist" class="bm_c">
-<dt class="ptm pbm bbda"><img src="static/image/common/online_admin.gif"> 管理员 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_supermod.gif"> 超级版主 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_moderator.gif"> 版主 &nbsp; &nbsp; &nbsp; <img src="static/image/common/online_member.gif"> 会员 &nbsp; &nbsp; &nbsp; </dt>
-<dd class="ptm pbm">
-<ul class="cl">
-<li title="时间: 19:14">
-<img src="static/image/common/online_member.gif" alt="icon">
-<a href="home.php?mod=space&amp;uid=5709">Stefanan</a>
-</li>
-<li title="时间: 19:12">
-<img src="static/image/common/online_member.gif" alt="icon">
-<a href="home.php?mod=space&amp;uid=5609">贾荣婷</a>
-</li>
-<li title="时间: 19:10">
-<img src="static/image/common/online_member.gif" alt="icon">
-<a href="home.php?mod=space&amp;uid=5610">翻墙3ccc.cf</a>
-</li>
-<li title="时间: 19:09">
-<img src="static/image/common/online_member.gif" alt="icon">
-<a href="home.php?mod=space&amp;uid=5702">JamesNeign</a>
-</li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="bm lk">
-<div id="category_lk" class="bm_c ptm">
-<ul class="m mbn cl"><li class="mbm bbda"><div class="lk_content"><h5><a href="https://www.aistudyblog.com/" target="_blank">AiStudy人工智能</a></h5><p>AiStudy人工智能</p></div></li></ul>
-<ul class="x mbm cl">
-<li><a href="http://www.400yun.cn" target="_blank" title="400电话申请">400电话申请</a></li><li><a href="http://www.seidon.club" target="_blank" title="区块链博客">区块链博客</a></li><li><a href="http://www.wbi.cn/" target="_blank" title="虚拟币">虚拟币</a></li><li><a href="http://www.wbi.cn/" target="_blank" title="区块链">区块链</a></li><li><a href="http://www.wbi.cn/" target="_blank" title="比特币">比特币</a></li><li><a href="http://hao.21bm.com" target="_blank" title="hao123导航">hao123导航</a></li><li><a href="http://www.beezhi.com" target="_blank" title="区块链">区块链</a></li><li><a href="http://www.xiaojiucai.vip" target="_blank" title="小韭菜">小韭菜</a></li><li><a href="http://www.licaiqihuo.cn" target="_blank" title="微期货">微期货</a></li><li><a href="http://www.nbcoin.cn/" target="_blank" title="牛币网">牛币网</a></li></ul>
-</div>
-</div>
-</div>
-</div>
-<script>fixed_top_nv();</script> </div>
 {% endblock inner %}

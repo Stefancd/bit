@@ -39,4 +39,6 @@ urlpatterns = [
     url(r'^verifycode/$', views.verifycode),
     # url(r'^post/(?P<pk>\d+)$', views.post),
 
+    # url(r'^bstitle/$',views.bstitle)
+
 ]

@@ -5,10 +5,29 @@ from app.models import User
 
 
 # Create your views here.
+from app.models import BsTitle
 
 
 def index(request):
-    return render(request, 'app/index.html')
+    btitles = BsTitle.objects.all().values('bid','btitle').distinct()
+    stitles = BsTitle.objects.all()
+    # btitles = BsTitle.objects.filter()
+    # stitles = BsTitle.objects.filter()
+    # list1 = []
+    # print('--------------',btitles)
+    # for bt in btitles:
+    #     if bt.bid not in list1:
+    #         list1.append(bt)
+    # for i in list1:
+    #     print(i.id,'-----------',i.bid)
+    data = {
+        # 'btitles':list1,
+        'btitles':btitles,
+        'stitles':stitles,
+
+    }
+    return render(request,'app/index.html',data)
+
 
 
 def register(request):
@@ -183,4 +202,4 @@ def verifycode(request):
     return HttpResponse(buf.getvalue(), 'image/png')
 
 
-
+# def bstitle(request):
