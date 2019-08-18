@@ -22,4 +22,5 @@ class Post(models.Model):
         db_table = 'posts'
 
 
-class Bigtitle
+# class Bigtitle
+
