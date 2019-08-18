@@ -1,0 +1,135 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+<div id="wp" class="wp"><div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">万币网-比特币论坛、以太坊社区，山寨币、虚拟币交流</a> <em>›</em>
+<a href="home.php?mod=spacecp">设置</a> <em>›</em>个人资料
+</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+<div class="mn">
+<div class="bm bw0">
+<h1 class="mt">个人资料
+</h1>
+<ul class="tb cl">
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=base">基本资料</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=contact">联系方式</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=edu">教育情况</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=work">工作情况</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=info">个人信息</a></li>
+</ul><iframe id="frame_profile" name="frame_profile" style="display: none" __idm_frm__="206"></iframe>
+<form action="home.php?mod=spacecp&amp;ac=profile&amp;op=work" method="post" enctype="multipart/form-data" autocomplete="off" target="frame_profile" onsubmit="clearErrorInfo();">
+<input type="hidden" value="dd570e26" name="formhash">
+<table cellspacing="0" cellpadding="0" class="tfm" id="profilelist">
+<tbody><tr>
+<th>用户名</th>
+<td>Stefanan</td>
+<td>&nbsp;</td>
+</tr><tr id="tr_company">
+<th id="th_company">公司</th>
+<td id="td_company">
+<input type="text" name="company" id="company" class="px" value="" tabindex="1"><div class="rq mtn" id="showerror_company"></div><p class="d"></p></td>
+<td class="p">
+<select name="privacy[company]">
+<option value="0">公开</option>
+<option value="1">好友可见</option>
+<option value="3">保密</option>
+</select>
+</td>
+</tr>
+<tr id="tr_occupation">
+<th id="th_occupation">职业</th>
+<td id="td_occupation">
+<input type="text" name="occupation" id="occupation" class="px" value="" tabindex="1"><div class="rq mtn" id="showerror_occupation"></div><p class="d"></p></td>
+<td class="p">
+<select name="privacy[occupation]">
+<option value="0">公开</option>
+<option value="1">好友可见</option>
+<option value="3">保密</option>
+</select>
+</td>
+</tr>
+<tr id="tr_position">
+<th id="th_position">职位</th>
+<td id="td_position">
+<input type="text" name="position" id="position" class="px" value="" tabindex="1"><div class="rq mtn" id="showerror_position"></div><p class="d"></p></td>
+<td class="p">
+<select name="privacy[position]">
+<option value="0">公开</option>
+<option value="1">好友可见</option>
+<option value="3">保密</option>
+</select>
+</td>
+</tr>
+<tr id="tr_revenue">
+<th id="th_revenue">年收入</th>
+<td id="td_revenue">
+<input type="text" name="revenue" id="revenue" class="px" value="" tabindex="1"><div class="rq mtn" id="showerror_revenue"></div><p class="d"></p></td>
+<td class="p">
+<select name="privacy[revenue]">
+<option value="0">公开</option>
+<option value="1">好友可见</option>
+<option value="3">保密</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<td colspan="2">
+<input type="hidden" name="profilesubmit" value="true">
+<button type="submit" name="profilesubmitbtn" id="profilesubmitbtn" value="true" class="pn pnc"><strong>保存</strong></button>
+<span id="submit_result" class="rq"></span>
+</td>
+</tr>
+</tbody></table>
+</form>
+<script type="text/javascript">
+function show_error(fieldid, extrainfo) {
+var elem = $('th_'+fieldid);
+if(elem) {
+elem.className = "rq";
+fieldname = elem.innerHTML;
+extrainfo = (typeof extrainfo == "string") ? extrainfo : "";
+$('showerror_'+fieldid).innerHTML = "请检查该资料项 " + extrainfo;
+$(fieldid).focus();
+}
+}
+function show_success(message) {
+message = message == '' ? '资料更新成功' : message;
+showDialog(message, 'right', '提示信息', function(){
+top.window.location.href = top.window.location.href;
+}, 0, null, '', '', '', '', 3);
+}
+function clearErrorInfo() {
+var spanObj = $('profilelist').getElementsByTagName("div");
+for(var i in spanObj) {
+if(typeof spanObj[i].id != "undefined" && spanObj[i].id.indexOf("_")) {
+var ids = explode('_', spanObj[i].id);
+if(ids[0] == "showerror") {
+spanObj[i].innerHTML = '';
+$('th_'+ids[1]).className = '';
+}
+}
+}
+}
+</script>
+</div>
+</div>
+<div class="appl"><div class="tbn">
+<h2 class="mt bbda">设置</h2>
+<ul>
+<li><a href="home.php?mod=spacecp&amp;ac=avatar">修改头像</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=profile">个人资料</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=promotion">访问推广</a></li>
+</ul>
+</div></div>
+</div> </div>
+
+
+
+{% endblock personinner %}

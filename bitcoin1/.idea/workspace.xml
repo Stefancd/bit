@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc6a49cf-4288-45c2-89a1-c685d06bf64a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="943">
+              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcoin1/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1886">
+              <caret line="82" column="31" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcoin1/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ft_xin</find>
+      <find>toptb</find>
+      <find>wp</find>
+      <find>/hea</find>
+      <find>登录</find>
+      <find>主流币</find>
+      <find>我的</find>
+      <find>y cl</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/app/test.html" />
+        <option value="$PROJECT_DIR$/bitcoin1/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/app/basedetails.html" />
+        <option value="$PROJECT_DIR$/templates/app/basepersonaldata.html" />
+        <option value="$PROJECT_DIR$/templates/app/profile.html" />
+        <option value="$PROJECT_DIR$/templates/app/bscredit.html" />
+        <option value="$PROJECT_DIR$/templates/app/bsusergroup.html" />
+        <option value="$PROJECT_DIR$/templates/app/bsprivacy.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspwsafe.html" />
+        <option value="$PROJECT_DIR$/templates/app/bsprofile.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspromotion.html" />
+        <option value="$PROJECT_DIR$/templates/app/bsavatar.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspfcontact.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspfedu.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspfwork.html" />
+        <option value="$PROJECT_DIR$/templates/app/bspfinformation.html" />
+        <option value="$PROJECT_DIR$/templates/app/bscdrecord.html" />
+        <option value="$PROJECT_DIR$/templates/app/bscdrule.html" />
+        <option value="$PROJECT_DIR$/templates/app/bsugbuy.html" />
+        <option value="$PROJECT_DIR$/templates/app/ugmine.html" />
+        <option value="$PROJECT_DIR$/templates/app/index.html" />
+        <option value="$PROJECT_DIR$/templates/404.html" />
+        <option value="$PROJECT_DIR$/bitcoin1/settings.py" />
+        <option value="$PROJECT_DIR$/templates/app/register.html" />
+        <option value="$PROJECT_DIR$/bitcoin1/urls.py" />
+        <option value="$PROJECT_DIR$/templates/app/basepersonal.html" />
+        <option value="$PROJECT_DIR$/templates/app/login.html" />
+        <option value="$PROJECT_DIR$/templates/app/base.html" />
+        <option value="$PROJECT_DIR$/app/urls.py" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="6" />
+    <option name="width" value="977" />
+    <option name="height" value="679" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Adjango\bitcoin1\statics\common\fonts" />
+      <recent name="F:\Adjango\bitcoin1\templates\app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="bitcoin1" type="Python.DjangoServer" factoryName="Django server">
+      <module name="bitcoin1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc6a49cf-4288-45c2-89a1-c685d06bf64a" name="Default Changelist" comment="" />
+      <created>1565609257146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565609257146</updated>
+      <workItem from="1565609258642" duration="5712000" />
+      <workItem from="1565618741470" duration="490000" />
+      <workItem from="1565619293311" duration="8536000" />
+      <workItem from="1565657789028" duration="16492000" />
+      <workItem from="1565699668853" duration="754000" />
+      <workItem from="1565700812514" duration="39470000" />
+      <workItem from="1565950389983" duration="9750000" />
+      <workItem from="1566058875827" duration="1114000" />
+      <workItem from="1566094689073" duration="1211000" />
+      <workItem from="1566124695917" duration="847000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="84376000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10665658" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.23895253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.1898527" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32242227" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bitcoin1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/littleinner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/basepersonaldata.html" />
+    <entry file="file://$PROJECT_DIR$/templates/app/bscredit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#273#0#HTML" />
+            <element signature="e#115#266#0#HTML" />
+            <element signature="e#695#701#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bsusergroup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="582" column="6" selection-start-line="582" selection-start-column="6" selection-end-line="582" selection-end-column="6" />
+          <folding>
+            <element signature="e#87#274#0#HTML" />
+            <element signature="e#115#267#0#HTML" />
+            <element signature="e#1117#1123#1#HTML" expanded="true" />
+            <element signature="e#1154#1160#1#HTML" expanded="true" />
+            <element signature="e#10934#10940#0#HTML" expanded="true" />
+            <element signature="e#11060#11080#0#HTML" expanded="true" />
+            <element signature="e#11182#11202#0#HTML" expanded="true" />
+            <element signature="e#11725#11745#0#HTML" expanded="true" />
+            <element signature="e#12183#12203#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bsprivacy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#1711#0#HTML" />
+            <element signature="e#978#984#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspwsafe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#4374#0#HTML" />
+            <element signature="e#2558#2595#0#HTML" expanded="true" />
+            <element signature="e#3437#3443#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspromotion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#457#463#0#HTML" expanded="true" />
+            <element signature="e#530#536#0#HTML" expanded="true" />
+            <element signature="e#1598#1604#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspfcontact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#5199#0#HTML" />
+            <element signature="e#838#859#0#HTML" expanded="true" />
+            <element signature="e#1241#1247#1#HTML" expanded="true" />
+            <element signature="e#3336#3342#0#HTML" expanded="true" />
+            <element signature="e#3447#3453#1#HTML" expanded="true" />
+            <element signature="e#3474#3480#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspfedu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="110" column="26" lean-forward="true" selection-end-line="110" selection-end-column="26" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#4020#0#HTML" />
+            <element signature="e#838#859#0#HTML" expanded="true" />
+            <element signature="e#1237#1243#1#HTML" expanded="true" />
+            <element signature="e#2295#2301#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspfwork.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#4020#0#HTML" />
+            <element signature="e#838#859#0#HTML" expanded="true" />
+            <element signature="e#1238#1244#1#HTML" expanded="true" />
+            <element signature="e#2295#2301#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bspfinformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="232" column="13" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#9444#0#HTML" />
+            <element signature="e#838#859#0#HTML" expanded="true" />
+            <element signature="e#1238#1244#1#HTML" expanded="true" />
+            <element signature="e#5558#5564#1#HTML" expanded="true" />
+            <element signature="e#7692#7698#1#HTML" expanded="true" />
+            <element signature="e#7719#7725#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bsavatar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="107" column="26" lean-forward="true" selection-end-line="107" selection-end-column="26" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#5671#0#HTML" />
+            <element signature="e#1263#1299#0#HTML" expanded="true" />
+            <element signature="e#1330#1366#0#HTML" expanded="true" />
+            <element signature="e#1436#1472#0#HTML" expanded="true" />
+            <element signature="e#1529#1556#0#HTML" expanded="true" />
+            <element signature="e#1622#1670#0#HTML" expanded="true" />
+            <element signature="e#1729#1806#0#HTML" expanded="true" />
+            <element signature="e#1899#2071#0#HTML" expanded="true" />
+            <element signature="e#2121#2141#0#HTML" expanded="true" />
+            <element signature="e#2196#2216#0#HTML" expanded="true" />
+            <element signature="e#2310#2330#0#HTML" expanded="true" />
+            <element signature="e#2539#2617#0#HTML" expanded="true" />
+            <element signature="e#2774#2792#0#HTML" expanded="true" />
+            <element signature="e#2805#2904#0#HTML" expanded="true" />
+            <element signature="e#2905#2911#1#HTML" expanded="true" />
+            <element signature="e#2922#3022#0#HTML" expanded="true" />
+            <element signature="e#3023#3029#1#HTML" expanded="true" />
+            <element signature="e#3040#3141#0#HTML" expanded="true" />
+            <element signature="e#3142#3148#1#HTML" expanded="true" />
+            <element signature="e#4571#4593#0#HTML" expanded="true" />
+            <element signature="e#4662#4684#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bscdrecord.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#273#0#HTML" />
+            <element signature="e#274#3395#0#HTML" />
+            <element signature="e#1054#1076#0#HTML" expanded="true" />
+            <element signature="e#1239#1261#0#HTML" expanded="true" />
+            <element signature="e#1343#1362#0#HTML" expanded="true" />
+            <element signature="e#1787#1809#0#HTML" expanded="true" />
+            <element signature="e#1890#1909#0#HTML" expanded="true" />
+            <element signature="e#2049#2071#0#HTML" expanded="true" />
+            <element signature="e#2147#2166#0#HTML" expanded="true" />
+            <element signature="e#2219#2225#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bscdrule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="165" column="13" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
+          <folding>
+            <element signature="e#87#273#0#HTML" />
+            <element signature="e#274#6529#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bsugbuy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#87#274#0#HTML" />
+            <element signature="e#275#1343#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bsprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="182" column="26" lean-forward="true" selection-end-line="182" selection-end-column="26" />
+          <folding>
+            <element signature="e#87#275#0#HTML" />
+            <element signature="e#276#14800#0#HTML" />
+            <element signature="e#838#859#0#HTML" expanded="true" />
+            <element signature="e#1238#1244#1#HTML" expanded="true" />
+            <element signature="e#5719#5725#0#HTML" expanded="true" />
+            <element signature="e#5725#5731#0#HTML" expanded="true" />
+            <element signature="e#6202#6208#0#HTML" expanded="true" />
+            <element signature="e#6208#6214#0#HTML" expanded="true" />
+            <element signature="e#9312#9318#0#HTML" expanded="true" />
+            <element signature="e#9318#9324#0#HTML" expanded="true" />
+            <element signature="e#11430#11436#0#HTML" expanded="true" />
+            <element signature="e#11436#11442#0#HTML" expanded="true" />
+            <element signature="e#13075#13081#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/ugmine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="1136" column="6" selection-start-line="1136" selection-start-column="6" selection-end-line="1136" selection-end-column="6" />
+          <folding>
+            <element signature="e#87#274#0#HTML" />
+            <element signature="e#115#267#0#HTML" />
+            <element signature="e#275#1343#0#HTML" />
+            <element signature="e#1447#1472#0#HTML" expanded="true" />
+            <element signature="e#2005#2030#0#HTML" expanded="true" />
+            <element signature="e#2577#2602#0#HTML" expanded="true" />
+            <element signature="e#3135#3160#0#HTML" expanded="true" />
+            <element signature="e#4231#4256#0#HTML" expanded="true" />
+            <element signature="e#4789#4814#0#HTML" expanded="true" />
+            <element signature="e#5335#5360#0#HTML" expanded="true" />
+            <element signature="e#5895#5920#0#HTML" expanded="true" />
+            <element signature="e#6442#6467#0#HTML" expanded="true" />
+            <element signature="e#7052#7057#0#HTML" expanded="true" />
+            <element signature="e#7528#7553#0#HTML" expanded="true" />
+            <element signature="e#8086#8111#0#HTML" expanded="true" />
+            <element signature="e#9162#9187#0#HTML" expanded="true" />
+            <element signature="e#9708#9733#0#HTML" expanded="true" />
+            <element signature="e#10268#10293#0#HTML" expanded="true" />
+            <element signature="e#10827#10852#0#HTML" expanded="true" />
+            <element signature="e#11399#11424#0#HTML" expanded="true" />
+            <element signature="e#11958#11983#0#HTML" expanded="true" />
+            <element signature="e#12533#12558#0#HTML" expanded="true" />
+            <element signature="e#13091#13116#0#HTML" expanded="true" />
+            <element signature="e#13661#13686#0#HTML" expanded="true" />
+            <element signature="e#14216#14241#0#HTML" expanded="true" />
+            <element signature="e#14797#14822#0#HTML" expanded="true" />
+            <element signature="e#15361#15386#0#HTML" expanded="true" />
+            <element signature="e#15930#15955#0#HTML" expanded="true" />
+            <element signature="e#16489#16514#0#HTML" expanded="true" />
+            <element signature="e#17049#17074#0#HTML" expanded="true" />
+            <element signature="e#17598#17623#0#HTML" expanded="true" />
+            <element signature="e#18168#18193#0#HTML" expanded="true" />
+            <element signature="e#18731#18756#0#HTML" expanded="true" />
+            <element signature="e#19296#19321#0#HTML" expanded="true" />
+            <element signature="e#19853#19878#0#HTML" expanded="true" />
+            <element signature="e#20426#20451#0#HTML" expanded="true" />
+            <element signature="e#20982#21007#0#HTML" expanded="true" />
+            <element signature="e#21549#21574#0#HTML" expanded="true" />
+            <element signature="e#22110#22135#0#HTML" expanded="true" />
+            <element signature="e#22671#22696#0#HTML" expanded="true" />
+            <element signature="e#23227#23252#0#HTML" expanded="true" />
+            <element signature="e#23806#23831#0#HTML" expanded="true" />
+            <element signature="e#24356#24381#0#HTML" expanded="true" />
+            <element signature="e#24930#24955#0#HTML" expanded="true" />
+            <element signature="e#25496#25521#0#HTML" expanded="true" />
+            <element signature="e#26068#26093#0#HTML" expanded="true" />
+            <element signature="e#26622#26647#0#HTML" expanded="true" />
+            <element signature="e#27203#27228#0#HTML" expanded="true" />
+            <element signature="e#27764#27789#0#HTML" expanded="true" />
+            <element signature="e#28337#28362#0#HTML" expanded="true" />
+            <element signature="e#28902#28927#0#HTML" expanded="true" />
+            <element signature="e#29466#29491#0#HTML" expanded="true" />
+            <element signature="e#30021#30046#0#HTML" expanded="true" />
+            <element signature="e#30589#30614#0#HTML" expanded="true" />
+            <element signature="e#31142#31167#0#HTML" expanded="true" />
+            <element signature="e#31714#31739#0#HTML" expanded="true" />
+            <element signature="e#32272#32297#0#HTML" expanded="true" />
+            <element signature="e#32844#32869#0#HTML" expanded="true" />
+            <element signature="e#33409#33434#0#HTML" expanded="true" />
+            <element signature="e#33977#34002#0#HTML" expanded="true" />
+            <element signature="e#34528#34553#0#HTML" expanded="true" />
+            <element signature="e#35101#35126#0#HTML" expanded="true" />
+            <element signature="e#35675#35700#0#HTML" expanded="true" />
+            <element signature="e#36240#36265#0#HTML" expanded="true" />
+            <element signature="e#36798#36823#0#HTML" expanded="true" />
+            <element signature="e#37369#37394#0#HTML" expanded="true" />
+            <element signature="e#37926#37951#0#HTML" expanded="true" />
+            <element signature="e#38495#38520#0#HTML" expanded="true" />
+            <element signature="e#39051#39076#0#HTML" expanded="true" />
+            <element signature="e#39613#39638#0#HTML" expanded="true" />
+            <element signature="e#40169#40194#0#HTML" expanded="true" />
+            <element signature="e#40736#40761#0#HTML" expanded="true" />
+            <element signature="e#41293#41318#0#HTML" expanded="true" />
+            <element signature="e#41858#41883#0#HTML" expanded="true" />
+            <element signature="e#42427#42452#0#HTML" expanded="true" />
+            <element signature="e#42986#43011#0#HTML" expanded="true" />
+            <element signature="e#43541#43566#0#HTML" expanded="true" />
+            <element signature="e#44114#44139#0#HTML" expanded="true" />
+            <element signature="e#44772#44778#0#HTML" expanded="true" />
+            <element signature="e#44864#44870#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/basedetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/basepersonal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="77" column="90" selection-start-line="77" selection-start-column="90" selection-end-line="77" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文件夹/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="65" selection-start-line="65" selection-end-line="65" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Django-class/pydjango/venv/Lib/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/700750242/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="721" column="6" selection-start-line="721" selection-start-column="6" selection-end-line="721" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Django-class/pydjango/venv/Lib/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="178" column="27" selection-start-line="178" selection-start-column="27" selection-end-line="178" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

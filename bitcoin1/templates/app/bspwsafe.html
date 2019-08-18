@@ -1,0 +1,106 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+<div id="wp" class="wp"><div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">万币网-比特币论坛、以太坊社区，山寨币、虚拟币交流</a> <em>›</em>
+<a href="home.php?mod=spacecp">设置</a> <em>›</em>密码安全
+</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+<div class="mn">
+<div class="bm bw0">
+<h1 class="mt">密码安全
+</h1>
+<script src="data/cache/register.js?Kb8" type="text/javascript"></script>
+<p class="bbda pbm mbm">
+您必须填写原密码才能修改下面的资料</p>
+<form action="home.php?mod=spacecp&amp;ac=profile" method="post" autocomplete="off">
+<input type="hidden" value="dd570e26" name="formhash">
+<table summary="个人资料" cellspacing="0" cellpadding="0" class="tfm">
+<tbody><tr>
+<th><span class="rq" title="必填">*</span>旧密码</th>
+<td><input type="password" name="oldpassword" id="oldpassword" class="px"></td>
+</tr>
+<tr>
+<th>新密码</th>
+<td>
+<input type="password" name="newpassword" id="newpassword" class="px">
+<p class="d" id="chk_newpassword">如不需要更改密码，此处请留空 </p>
+</td>
+</tr>
+<tr>
+<th>确认新密码</th>
+<td>
+<input type="password" name="newpassword2" id="newpassword2" class="px">
+<p class="d" id="chk_newpassword2">如不需要更改密码，此处请留空 </p>
+</td>
+</tr>
+<tr id="contact">
+<th>Email</th>
+<td>
+<input type="text" name="emailnew" id="emailnew" value="1076428442@qq.com" class="px">
+<p class="d">
+<img src="static/image/common/mail_inactive.png" alt="未验证" class="vm"> <span class="xi1">新邮箱(1076428442@qq.com)等待验证中...</span><br>
+系统已经向该邮箱发送了一封验证激活邮件，请查收邮件，进行验证激活。<br>
+如果没有收到验证邮件，您可以更换一个邮箱，或者<a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password&amp;resend=1" class="xi2">重新接收验证邮件</a></p>
+</td>
+</tr>
+<tr>
+<th>安全提问</th>
+<td>
+<select name="questionidnew" id="questionidnew">
+<option value="" selected="">保持原有的安全提问和答案</option>
+<option value="0">无安全提问</option>
+<option value="1">母亲的名字</option>
+<option value="2">爷爷的名字</option>
+<option value="3">父亲出生的城市</option>
+<option value="4">您其中一位老师的名字</option>
+<option value="5">您个人计算机的型号</option>
+<option value="6">您最喜欢的餐馆名称</option>
+<option value="7">驾驶执照最后四位数字</option>
+</select>
+<p class="d">如果您启用安全提问，登录时需填入相应的项目才能登录 </p>
+</td>
+</tr>
+<tr>
+<th>回答</th>
+<td>
+<input type="text" name="answernew" id="answernew" class="px">
+<p class="d">如您设置新的安全提问，请在此输入答案 </p>
+</td>
+</tr>
+</tbody></table><span id="seccode_cSWccjoC"><input name="seccodehash" type="hidden" value="cSWccjoC"><input name="seccodemodid" type="hidden" value="home::spacecp"><table cellspacing="0" cellpadding="0" class="tfm"><tbody><tr><th>验证码</th><td><input name="seccodeverify" id="seccodeverify_cSWccjoC" type="text" autocomplete="off" style="ime-mode:disabled;width:100px" class="txt px vm" onblur="checksec('code', 'cSWccjoC', 0, null, 'home::spacecp')"> <a href="javascript:;" onclick="updateseccode('cSWccjoC');doane(event);" class="xi2">换一个</a><span id="checkseccodeverify_cSWccjoC"><img src="static/image/common/none.gif" width="16" height="16" class="vm"></span><p class="d"><span id="vseccode_cSWccjoC">输入下图中的字符<br><img onclick="updateseccode('cSWccjoC')" width="100" height="30" src="misc.php?mod=seccode&amp;update=66925&amp;idhash=cSWccjoC" class="vm" alt=""></span></p></td></tr></tbody></table></span>
+<script type="text/javascript" reload="1">updateseccode('cSWccjoC', '<table cellspacing="0" cellpadding="0" class="tfm"><tr><th><sec></th><td><sec><p class="d"><sec></p></td></tr></table>', 'home::spacecp');</script>
+<table summary="个人资料" cellspacing="0" cellpadding="0" class="tfm">
+<tbody><tr>
+<th>&nbsp;</th>
+<td><button type="submit" name="pwdsubmit" value="true" class="pn pnc"><strong>保存</strong></button></td>
+</tr>
+</tbody></table>
+<input type="hidden" name="passwordsubmit" value="true">
+</form>
+<script type="text/javascript">
+var strongpw = new Array();
+var pwlength = 6;
+checkPwdComplexity($('newpassword'), $('newpassword2'), true);
+</script>
+</div>
+</div>
+<div class="appl"><div class="tbn">
+<h2 class="mt bbda">设置</h2>
+<ul>
+<li><a href="home.php?mod=spacecp&amp;ac=avatar">修改头像</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile">个人资料</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=promotion">访问推广</a></li>
+</ul>
+</div></div>
+</div> </div>
+
+
+
+{% endblock personinner %}

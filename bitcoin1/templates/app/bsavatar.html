@@ -1,0 +1,108 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+<div id="wp" class="wp"><div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">万币网-比特币论坛、以太坊社区，山寨币、虚拟币交流</a> <em>›</em>
+<a href="home.php?mod=spacecp">设置</a> <em>›</em>修改头像
+</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+<div class="mn">
+<div class="bm bw0">
+<h1 class="mt">修改头像
+</h1>
+<script type="text/javascript">
+function updateavatar() {
+window.location.href = document.location.href.replace('&reload=1', '') + '&reload=1';
+}
+saveUserdata('avatar_redirect', document.referrer);
+</script>
+<form id="avatarform" enctype="multipart/form-data" method="post" autocomplete="off" action="home.php?mod=spacecp&amp;ac=avatar&amp;ref" target="uploadframe">
+<table cellspacing="0" cellpadding="0" class="tfm">
+<caption>
+<span id="retpre" class="y xi2"></span>
+<h2 class="xs2">当前我的头像</h2>
+<p>如果您还没有设置自己的头像，系统会显示为默认头像，您需要自己上传一张新照片来作为自己的个人头像 </p>
+</caption>
+<tbody><tr>
+<td><img src="http://www.wbi.cn/uc_server/avatar.php?uid=5709&amp;size=big"></td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" class="tfm">
+<caption>
+<h2 class="xs2">设置我的新头像</h2>
+<p>请选择一个新照片进行上传编辑。<br>头像保存后，您可能需要刷新一下本页面(按F5键)，才能查看最新的头像效果 </p>
+</caption>
+<tbody><tr>
+<td>
+<div id="avatardesigner" style="width: 430px; height: 228px;">
+<div id="avatarfileselector" style="width: 430px; height: 228px;">
+<input type="file" name="Filedata" id="avatarfile" accept="image/*" style="width: 430px; height: 228px;">
+</div>
+<div id="avataradjuster">
+<img id="avatarimage" style="visibility: hidden;" onload="forceSelectorInsideAvatar();">
+<canvas id="avatarcanvas" style="position: absolute; top: 0px; left: 0px;" width="300" height="228"></canvas>
+<div id="widgetparent" style="position: absolute; left: 0px; top: 0px; width: 300px; height: 228px;">
+<div id="selector" class="ui-widget-content ui-draggable ui-draggable-handle ui-resizable" style="position: absolute; width: 150px; height: 150px; overflow: hidden; cursor: move; border: 1px solid lightgrey; background-color: transparent; background-image: none;">
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+</div>
+<div class="backfileselectiondiv">
+<input type="button" name="backfileselection" class="backfileselection" value="Select File" onclick="showAvatarFileSelector();">
+</div>
+<div id="slider" style="height: 0px; position: absolute; right: 9px; top: 105px; width: 100px;" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span><div style="position: absolute; top: -2px; left: 0px; width: 3px; height: 6px; background-color: black;">&nbsp;</div><div style="position: absolute; top: -2px; left: 50px; width: 3px; height: 6px; background-color: black;">&nbsp;</div><div style="position: absolute; top: -2px; left: 100px; width: 3px; height: 6px; background-color: black;">&nbsp;</div></div>
+<div class="saveAvatardiv">
+<input type="submit" name="confirm" value="确定" class="saveAvatar" style="" onclick="saveAvatar();">
+</div>
+<input type="hidden" id="avatar1" name="avatar1">
+<input type="hidden" id="avatar2" name="avatar2">
+<input type="hidden" id="avatar3" name="avatar3">
+</div>
+<div id="avatardisplayer">
+<canvas id="avatardisplaycanvas" width="430" height="228"></canvas>
+<div class="finishbuttondiv">
+<input type="button" value="完成" class="finishbutton" onclick="location.reload(true);">
+</div>
+</div>
+</div>
+<script src="static/js/mobile/jquery.min.js?Kb8" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+var data = "width,450,height,253,scale,exactfit,src,http://www.wbi.cn/uc_server/images/camera.swf?inajax=1&appid=1&input=8511IeBcd9%2BHCjYm4t%2Bz0TyLoKt8IJEC0B3bosVxEPfoqWroZAsE1TiV5py5dOsZYTWrtPeBVroMnpJt%2BgjJkl4lYigg3D5p%2BTfHJ5YmYb5iQhO0ht0zE8JnVrI&agent=666332998c62658cc43216116351bf1f&ucapi=www.wbi.cn%2Fuc_server&avatartype=virtual&uploadSize=2048,id,mycamera,name,mycamera,quality,high,bgcolor,#ffffff,menu,false,swLiveConnect,true,allowScriptAccess,always".split(',');
+</script>
+<link rel="stylesheet" href="static/avatar/avatar.css?Kb8">
+<script src="static/avatar/jquery-ui.min.js?Kb8" type="text/javascript"></script>
+<script src="static/avatar/avatar.js?Kb8" type="text/javascript"></script>
+<iframe name="uploadframe" id="uploadframe" style="display: none;" __idm_frm__="196"></iframe>
+<iframe name="rectframe" id="rectframe" style="display: none;" __idm_frm__="197"></iframe>
+</td>
+</tr>
+</tbody></table>
+<a href="home.php?mod=spacecp&amp;ac=avatar&amp;old=1" class="xg1">如无法正常上传头像，请点此处切换为 Flash 方式上传</a>
+<input type="hidden" name="formhash" value="dd570e26">
+</form>
+</div>
+</div>
+<script type="text/javascript">
+var redirecturl = loadUserdata('avatar_redirect');
+if(redirecturl) {
+jQuery('retpre').innerHTML = '<a href="' + redirecturl + '">返回上一页</a>';
+}
+</script>
+<div class="appl"><div class="tbn">
+<h2 class="mt bbda">设置</h2>
+<ul>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=avatar">修改头像</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile">个人资料</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=promotion">访问推广</a></li>
+</ul>
+</div></div>
+</div> </div>
+
+
+
+{% endblock personinner %}

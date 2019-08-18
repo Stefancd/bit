@@ -1,0 +1,97 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+<div id="wp" class="wp"><div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">万币网-比特币论坛、以太坊社区，山寨币、虚拟币交流</a> <em>›</em>
+<a href="home.php?mod=spacecp">设置</a> <em>›</em>积分
+</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+<div class="mn">
+<div class="bm bw0">
+<h1 class="mt">积分
+</h1>
+<ul class="tb cl">
+<li><a href="home.php?mod=spacecp&amp;ac=credit&amp;op=base">我的积分</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=credit&amp;op=log">积分记录</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=credit&amp;op=rule">积分规则</a></li>
+</ul><p class="tbmu bw0">
+<a class="a" href="home.php?mod=spacecp&amp;ac=credit&amp;op=log" hidefocus="true">积分收益</a><span class="pipe">|</span>
+<a href="home.php?mod=spacecp&amp;ac=credit&amp;op=log&amp;suboperation=creditrulelog" hidefocus="true">系统奖励</a>
+</p>
+<script src="data/cache/calendar.js?Kb8" type="text/javascript"></script>
+<form method="post" action="home.php?mod=spacecp&amp;ac=credit&amp;op=log">
+<div class="exfm" style="margin-top: 0;">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<th>积分:</th>
+<td>
+<span class="ftid">
+<select id="exttype" name="exttype" class="ps" width="168" selecti="0" style="display: none;">
+
+
+
+<option value="0"></option></select><a href="javascript:;" id="exttype_ctrl" style="width:168px" tabindex="1">不限</a>
+</span>
+</td>
+<th>时间范围:</th>
+<td>
+<input type="text" name="starttime" class="px" size="11" value="" onclick="showcalendar(event, this)" readonly="readonly"> 至 <input type="text" name="endtime" class="px" size="11" value="" readonly="readonly" onclick="showcalendar(event, this)">
+</td>
+</tr>
+<tr>
+<th>收支:</th>
+<td>
+<span class="ftid">
+<select id="income" name="income" class="ps" width="168" selecti="0" style="display: none;">
+
+
+
+<option value="0"></option></select><a href="javascript:;" id="income_ctrl" style="width:168px" tabindex="1">不限</a>
+</span>
+</td>
+<th>操作:</th>
+<td><span class="ftid"><select id="optype" name="optype" class="ps" width="168" selecti="0" style="display: none;"><option value=""></option></select><a href="javascript:;" id="optype_ctrl" style="width:168px" tabindex="1">请选择操作类型</a></span></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<td><button type="submit" class="pn" name="search" value="true"><strong>查询</strong></button></td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+simulateSelect('exttype');
+simulateSelect('income');
+simulateSelect('optype');
+</script>
+</div>
+<table summary="主题付费" cellspacing="0" cellpadding="0" class="dt">
+<tbody><tr>
+<th width="80">操作</th>
+<th width="80">积分变更</th>
+<th>详情</th>
+<th width="100">变更时间</th>
+</tr></tbody></table>
+<input type="hidden" name="op" value="log">
+<input type="hidden" name="ac" value="credit">
+<input type="hidden" name="mod" value="spacecp">
+</form>
+</div>
+</div>
+<div class="appl"><div class="tbn">
+<h2 class="mt bbda">设置</h2>
+<ul>
+<li><a href="home.php?mod=spacecp&amp;ac=avatar">修改头像</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile">个人资料</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=promotion">访问推广</a></li>
+</ul>
+</div></div>
+</div> </div>
+
+
+
+{% endblock personinner %}

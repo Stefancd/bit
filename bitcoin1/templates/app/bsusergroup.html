@@ -1,0 +1,587 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+<div id="wp" class="wp"><div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">万币网-比特币论坛、以太坊社区，山寨币、虚拟币交流</a> <em>›</em>
+<a href="home.php?mod=spacecp">设置</a> <em>›</em>用户组
+</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+<div class="mn">
+<div class="bm bw0">
+<h1 class="mt">用户组
+</h1>
+<ul class="tb cl">
+<li class="y showmenu" id="gmy" onmouseover="showMenu(this.id)"><a href="home.php?mod=spacecp&amp;ac=usergroup">我的用户组</a></li>
+<li class="y a showmenu" id="gupgrade" onmouseover="showMenu(this.id)"><a>晋级用户组</a></li>
+<li class="y showmenu" id="guser" onmouseover="showMenu(this.id)"><a>普通用户组</a></li>
+<li class="y showmenu" id="gadmin" onmouseover="showMenu(this.id)"><a>站点管理组</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=usergroup">我的用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;do=list">购买用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;do=forum">我的论坛权限</a></li>
+</ul><div class="tdats">
+<table cellpadding="0" cellspacing="0" class="tdat">
+<tbody><tr><th class="c0">&nbsp;</th></tr>
+<tr><th class="alt">&nbsp;</th></tr>
+</tbody><tbody class="ca">
+<tr><td>用户级别</td></tr><tr class="alt">
+<td>访问论坛</td>
+</tr>
+<tr>
+<td>阅读权限</td>
+</tr>
+<tr class="alt">
+<td>隐身</td>
+</tr>
+<tr>
+<td>使用搜索</td>
+</tr>
+<tr class="alt">
+<td>自定义头衔</td>
+</tr>
+<tr>
+<td>发帖不受限制</td>
+</tr>
+<tr class="alt">
+<td>允许发短消息</td>
+</tr>
+<tr>
+<td>允许加好友</td>
+</tr>
+<tr class="alt">
+<td>查看统计数据报表</td>
+</tr>
+<tr>
+<td>允许使用应用</td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>帖子相关</th>
+</tr>
+</tbody><tbody class="cb"><tr class="alt">
+<td>发新话题</td>
+</tr>
+<tr>
+<td>发表回复</td>
+</tr>
+<tr class="alt">
+<td>发起投票</td>
+</tr>
+<tr>
+<td>参与投票</td>
+</tr>
+<tr class="alt">
+<td>发表悬赏</td>
+</tr>
+<tr>
+<td>发表活动</td>
+</tr>
+<tr class="alt">
+<td>发表辩论</td>
+</tr>
+<tr>
+<td>发表交易</td>
+</tr>
+<tr class="alt">
+<td>允许 @ 的人数</td>
+</tr>
+<tr>
+<td>允许设置回帖奖励</td>
+</tr>
+<tr class="alt">
+<td>允许使用标签</td>
+</tr>
+<tr>
+<td>允许创建淘专辑的数量</td>
+</tr>
+<tr class="alt">
+<td>最大签名长度</td>
+</tr>
+<tr>
+<td>签名中使用编辑器代码</td>
+</tr>
+<tr class="alt">
+<td>签名中使用 [img] 代码</td>
+</tr>
+<tr>
+<td>主题评价影响值</td>
+</tr>
+<tr class="alt">
+<td>允许参与评分</td>
+</tr>
+<tr>
+<td>允许参与点评</td>
+</tr>
+<tr class="alt">
+<td>允许使用多媒体代码</td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>家园相关</th>
+</tr>
+</tbody><tbody class="cc"><tr class="alt">
+<td>允许打招呼</td>
+</tr>
+<tr>
+<td>允许表态</td>
+</tr>
+<tr class="alt">
+<td>发表留言/评论</td>
+</tr>
+<tr>
+<td>空间大小</td>
+</tr>
+<tr class="alt">
+<td>单张图片最大尺寸</td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>附件相关</th>
+</tr>
+</tbody><tbody class="cd"><tr class="alt">
+<td>下载附件</td>
+</tr>
+<tr>
+<td>查看图片</td>
+</tr>
+<tr class="alt">
+<td>上传附件</td>
+</tr>
+<tr>
+<td>上传图片</td>
+</tr>
+<tr class="alt">
+<td>允许设置附件权限</td>
+</tr>
+<tr>
+<td>单个最大附件尺寸</td>
+</tr>
+<tr class="alt">
+<td>每天最大附件总尺寸</td>
+</tr>
+<tr>
+<td>每天最大附件数量</td>
+</tr>
+<tr class="alt">
+<td>附件类型</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="0" cellspacing="0" class="tdat tfx">
+<tbody><tr>
+<th class="c0"><h4>我的主用户组 - 新手上路</h4></th>
+</tr>
+<tr>
+<th class="alt"><span class="notice">积分: 5</span></th>
+</tr><tr><td><img src="static/image/common/star_level1.gif" alt="Rank: 1"></td></tr>
+</tbody><tbody class="ca"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+10</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+允许搜索帖子内容</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>新手上路</th>
+</tr>
+</tbody><tbody class="cb"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+0</td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+5</td>
+</tr>
+<tr class="alt">
+<td>
+80 字节
+</td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
++1</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>新手上路</th>
+</tr>
+</tbody><tbody class="cc"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+没有限制</td>
+</tr>
+<tr class="alt">
+<td>
+没有限制</td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>新手上路</th>
+</tr>
+</tbody><tbody class="cd"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+1000 KB</td>
+</tr>
+<tr class="alt">
+<td>
+没有限制</td>
+</tr>
+<tr>
+<td>
+没有限制</td>
+</tr>
+<tr class="alt">
+<td>
+<p class="nwp" title="chm, pdf, zip, rar, tar, gz, bzip2, gif, jpg, jpeg, png">chm, pdf, zip, rar, tar, gz, bzip2, gif, jpg, jpeg, png</p></td>
+</tr>
+</tbody></table>
+<ul id="tba" class="tb c2">
+<li id="c2">晋级用户组 - 注册会员</li>
+</ul>
+<div class="tscr">
+<table cellpadding="0" cellspacing="0" class="tdat">
+<tbody><tr>
+<th class="alt h">
+<span class="notice">您升级到此用户组还需积分 45</span>
+</th>
+</tr><tr><td><img src="static/image/common/star_level2.gif" alt="Rank: 2"></td></tr>
+</tbody><tbody class="ca"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+20</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+允许搜索帖子内容</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>注册会员</th>
+</tr>
+</tbody><tbody class="cb"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+0</td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+5</td>
+</tr>
+<tr class="alt">
+<td>
+100 字节
+</td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
++1</td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>注册会员</th>
+</tr>
+</tbody><tbody class="cc"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+没有限制</td>
+</tr>
+<tr class="alt">
+<td>
+没有限制</td>
+</tr>
+</tbody>
+<tbody><tr class="alt h">
+<th>注册会员</th>
+</tr>
+</tbody><tbody class="cd"><tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/data_valid.gif" alt="data_valid"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/data_invalid.gif" alt="data_invalid"></td>
+</tr>
+<tr>
+<td>
+1000 KB</td>
+</tr>
+<tr class="alt">
+<td>
+没有限制</td>
+</tr>
+<tr>
+<td>
+没有限制</td>
+</tr>
+<tr class="alt">
+<td>
+<p class="nwp" title="chm, pdf, zip, rar, tar, gz, bzip2, gif, jpg, jpeg, png">chm, pdf, zip, rar, tar, gz, bzip2, gif, jpg, jpeg, png</p></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<img src="static/image/common/data_valid.gif" alt="data_valid" class="vm"> 表示有权操作&nbsp;
+<img src="static/image/common/data_invalid.gif" alt="data_invalid" class="vm"> 表示无权操作
+<div id="gmy_menu" class="p_pop" style="display:none"><a href="home.php?mod=spacecp&amp;ac=usergroup">新手上路</a></div>
+<div id="gupgrade_menu" class="p_pop" style="display:none"><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=9">限制会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=10">新手上路</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=11" class="xi1">注册会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=12">中级会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=13">高级会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=14">金牌会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=15">论坛元老</a></div>
+<div id="guser_menu" class="p_pop" style="display:none"><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=4">禁止发言</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=5">禁止访问</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=6">禁止 IP</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=7">游客</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=8">等待验证会员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=20"></a></div>
+<div id="gadmin_menu" class="p_pop" style="display:none"><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=1">管理员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=2">超级版主</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=3">版主</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=16">实习版主</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=17">网站编辑</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=18">信息监察员</a><a href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=19">审核员</a></div>
+</div>
+</div>
+<div class="appl"><div class="tbn">
+<h2 class="mt bbda">设置</h2>
+<ul>
+<li><a href="home.php?mod=spacecp&amp;ac=avatar">修改头像</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile">个人资料</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=credit">积分</a></li>
+<li class="a"><a href="home.php?mod=spacecp&amp;ac=usergroup">用户组</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=privacy">隐私筛选</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=profile&amp;op=password">密码安全</a></li>
+<li><a href="home.php?mod=spacecp&amp;ac=promotion">访问推广</a></li>
+</ul>
+</div></div>
+</div>
+</div>
+
+
+
+{% endblock personinner %}
