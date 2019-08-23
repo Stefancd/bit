@@ -188,7 +188,7 @@
                                             <div class="pdbt">
                                             </div>
                                             <div class="authi">
-                                                <a href="http://127.0.0.1:8000/goods/{{ pid }}/"><img src="template/bygsjw/image/hei_chakan.png" alt="查看"
+                                                <a href="http://101.132.64.111/goods/{{ pid }}/"><img src="template/bygsjw/image/hei_chakan.png" alt="查看"
                                                      class="byg_first_img"><span style="position: relative;">{{ goods }}<i
                                                     class="byg_first_i"></i></span></a>
                                                 <span class="pipe">|</span>
@@ -530,7 +530,7 @@
                 {% else %}
                     {% if status %}
                     <div>
-                        <form action="http://127.0.0.1:8000/reply/{{ pid }}/" method="post" class="form-inline"
+                        <form action="http://101.132.64.111/reply/{{ pid }}/" method="post" class="form-inline"
                               style="font-size: 25px">
                             {% csrf_token %}
 
@@ -543,7 +543,7 @@
                     {% else %}
                     <div>
                             评论：<input type="disable" readonly =“readonly” name="content2" class="form-control" placeholder="须先激活才可评论">
-                            <a href="http://127.0.0.1:8000/active/"><input type="submit" value="激活" class="btn btn-default"></a>
+                            <a href="http://101.132.64.111/active/"><input type="submit" value="激活" class="btn btn-default"></a>
                     </div>
                     {% endif %}
 

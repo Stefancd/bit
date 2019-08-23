@@ -2,11 +2,11 @@
 
 {% block inner %}
 <div>
-    <form action="http://127.0.0.1:8000/login/" method="post">
+    <form action="http://101.132.64.111/login/" method="post">
 {#        {% csrf_token %}#}
         用户名：<input type="text" name="username"><br>
         密码：<input type="password" name="password"><br>
-        验证码：<input type="text" name="code"><img src="http://127.0.0.1:8000/verifycode/" alt=""><br>
+        验证码：<input type="text" name="code"><img src="http://101.132.64.111/verifycode/" alt=""><br>
 
         提交：<input type="submit">
 

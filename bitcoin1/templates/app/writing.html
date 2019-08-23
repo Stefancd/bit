@@ -2,8 +2,8 @@
 
 {% block personinner %}
 
-<!--    <form method="post" action="http://127.0.0.1:8000/writing/{{ sid }}">-->
-    <form method="post" action="http://127.0.0.1:8000/writing/{{ sid }}/">
+<!--    <form method="post" action="http://101.132.64.111/writing/{{ sid }}">-->
+    <form method="post" action="http://101.132.64.111/writing/{{ sid }}/">
         {% csrf_token %}
         标题：<input type="text" name="article" class="form-control" style="width: 30%"><br/>
         内容：<textarea name="content"></textarea><br/>

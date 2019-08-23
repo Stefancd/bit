@@ -4,7 +4,7 @@
 <div><h2 style="font-size: 15px">搜索结果如下（标题中或内容中包含“{{ keyword }}”的帖子）：</h2></div><br><br><br>
 <ol>
     {% for result in results %}
-    <li><h2 style="font-size: 20px"><a href="http://127.0.0.1:8000/postdetail/{{ result.id }}/">{{ result.article }}---作者：{{ result.author.username }}</a></h2></li>
+    <li><h2 style="font-size: 20px"><a href="http://101.132.64.111/postdetail/{{ result.id }}/">{{ result.article }}---作者：{{ result.author.username }}</a></h2></li>
     {% endfor %}
 </ol>
 
