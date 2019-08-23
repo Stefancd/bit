@@ -5,7 +5,7 @@ from tinymce.models import HTMLField
 
 
 class User(models.Model):
-    username = models.CharField(max_length=20)
+    username = models.CharField(max_length=20, verbose_name='用户名')
     password = models.CharField(max_length=256)
     email = models.CharField(max_length=30)
     isActive = models.BooleanField(default=False)
