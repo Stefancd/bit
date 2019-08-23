@@ -12,6 +12,7 @@ class User(models.Model):
 
     class Meta:
         db_table = 'users'
+        verbose_name_plural='用户列表'
 
 
 
@@ -22,7 +23,7 @@ class BsTitle(models.Model):
     stitle = models.CharField(max_length=20)
     class Meta:
         db_table = 'bstitles'
-
+        verbose_name_plural='板块分级'
 
 class Post(models.Model):
     article = models.CharField(max_length=20)
@@ -33,6 +34,7 @@ class Post(models.Model):
 
     class Meta:
         db_table = 'posts'
+        verbose_name_plural='帖子列表'
 
     @classmethod
     def create(cls, article,content,author,stitle):
