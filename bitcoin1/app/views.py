@@ -70,6 +70,7 @@ def postslist(request, sid):
         'plist': plist,
         'sid': sid,
     }
+
     return render(request, 'app/postslist.html', data)
 
 
@@ -427,6 +428,7 @@ def search(request):
     data = {
         'keyword':keyword,
         'results':results,
+        'keyword':keyword,
     }
     return render(request,'app/search.html',data)
 

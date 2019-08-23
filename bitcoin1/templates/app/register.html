@@ -95,8 +95,7 @@
                                                     <td><input
                                             name="code" id="seccodeverify_cSr7rjk9" type="text"
                                             autocomplete="off" style="ime-mode:disabled;width:100px" class="txt px vm"
-                                            ><img
-                                            src="http://127.0.0.1:8000/verifycode/" alt="aaa">
+                                            ><img onclick="changeCode(this);" id="img" src="http://127.0.0.1:8000/verifycode/" alt="aaa">
                                                     </td>
 
                                                 </tr>
@@ -160,3 +159,9 @@
         </div>
     </div>
 {% endblock inner %}
+
+<script>
+    function changeCode(ogj) {
+        obj.src="http://127.0.0.1:8000/verifycode/"+Math.random();
+    }
+</script>

@@ -126,6 +126,7 @@
                                 </tbody>
                                 <tbody id="normalthread_80691">
                                 {% for pt in plist %}
+
                                 <tr>
                                     <td class="author_img">
                                         <a href="home.php?mod=space&amp;uid=5721" c="1" mid="card_6307"><img
@@ -151,8 +152,8 @@
                                         </div>
                                         <div class="list_author">
 <span>
-&nbsp;作者:&nbsp;<a href="home.php?mod=space&amp;uid=5721" c="1" mid="card_6307">币蛋</a><span class="xi1">&nbsp;&nbsp;<span
-        title="2019-8-19">6&nbsp;小时前</span></span>
+&nbsp;作者:&nbsp;<a href="home.php?mod=space&amp;uid=5721" c="1" mid="card_6307">{{ pt.author.username }}</a><span class="xi1">&nbsp;&nbsp;<span
+        title="2019-8-19">{{ pt.time1 }}</span></span>
 </span>
                                         </div>
                                     </th>
@@ -162,7 +163,7 @@
                                     </td>
                                     <td class="by">
                                         <cite><a href="home.php?mod=space&amp;username=%E5%B8%81%E8%9B%8B" c="1"
-                                                 mid="card_6014">币蛋</a></cite>
+                                                 mid="card_6014">{{ pt.author.username }}</a></cite>
                                         <em><a href="forum.php?mod=redirect&amp;tid=80691&amp;goto=lastpost#lastpost"><span
                                                 title="2019-8-19 11:21">6&nbsp;小时前</span></a></em>
                                     </td>
