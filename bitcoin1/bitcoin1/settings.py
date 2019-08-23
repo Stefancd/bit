@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'app.middlewares.logMiddleware.LogMiddleware',
 ]
 
 ROOT_URLCONF = 'bitcoin1.urls'
@@ -63,7 +65,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'app.templatetags.myTag'
+
             ],
+            'libraries': {
+                'myTag': 'app.templatetags.myTag',
+            }
         },
     },
 ]
@@ -126,3 +133,20 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "statics")
 ]
+
+
+# 写博客的
+APPEND_SLASH=False
+
+
+# 邮件配置
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.163.com"
+EMAIL_PORT = 25    #默认的端口号
+# 发送邮件的邮箱
+EMAIL_HOST_USER = "zjgs9595@163.com"
+# 邮箱授权密码，在网页邮箱设置里面开启并设置
+#此处不能写邮箱登录密码，因为这样别人就可能登陆做其他事情
+EMAIL_HOST_PASSWORD = "cdx1995"
+# 收件人看到的发件人，自己编写随意
+EMAIL_FROM = "cdx<zjgs9595@163.com>"

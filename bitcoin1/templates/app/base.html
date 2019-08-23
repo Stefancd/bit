@@ -37,6 +37,8 @@
             src="data/cache/smilies.js?Kb8"></script>
     <script type="text/javascript" id="WTmTVVTVaXVTcTqUcllxUengWXYbgXWW" charset="UTF-8"
             src="data/cache/ajax.js?Kb8"></script>
+{% block sss %}
+{% endblock sss %}
 </head>
 <body>
 <header>
@@ -88,11 +90,14 @@
                         </div>
                     {% else %}
 
-                            <a href="javascript:;" id="myitem" class="showmenu"
+<!--                            <a href="javascript:;" id="myitem" class="showmenu"-->
+<!--                                "                      onmouseover="showMenu({'ctrlid':'myitem','pos':'34'});">我的</a>-->
+<!--                                <a href="home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu"-->
+<!--                                   onmouseover="showMenu({'ctrlid':'myprompt','pos':'34'});">提醒(1)</a>-->
+                            <a href="http://127.0.0.1:8000/bsprofile/" id="myitem" class="showmenu"
                                 "                      onmouseover="showMenu({'ctrlid':'myitem','pos':'34'});">我的</a>
                                 <a href="home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu"
                                    onmouseover="showMenu({'ctrlid':'myprompt','pos':'34'});">提醒(1)</a>
-
 
 
                     {% endif %}
@@ -127,7 +132,8 @@
             </div>
             <div id="scbar" class="cl">
                 <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))"
-                      action="search.php?searchsubmit=yes" target="_blank">
+                      action="http://127.0.0.1:8000/search/" target="_blank">
+<!--                      action="search.php?searchsubmit=yes" target="_blank">-->
                     <input type="hidden" name="mod" id="scbar_mod" value="forum">
                     <input type="hidden" name="formhash" value="89cbb291">
                     <input type="hidden" name="srchtype" value="title">
@@ -139,7 +145,7 @@
                             <td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1"
                                                          onmouseover="showMenu({'ctrlid':'scbar_type','pos':'43'});"
                                                          hidefocus="true" initialized="true">帖子</a></td>
-                            <td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容"
+                            <td class="scbar_txt_td"><input type="text" name="keyword" id="scbar_txt" value="请输入搜索内容"
                                                             autocomplete="off" x-webkit-speech="" speech="" class=" xg1"
                                                             placeholder="请输入搜索内容"></td>
                             <td class="scbar_btn_td">

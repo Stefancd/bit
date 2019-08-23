@@ -1,0 +1,15 @@
+{% extends 'app/basepersonal.html' %}
+
+{% block personinner %}
+
+<!--    <form method="post" action="http://127.0.0.1:8000/writing/{{ sid }}">-->
+    <form method="post" action="http://127.0.0.1:8000/writing/{{ sid }}/">
+        {% csrf_token %}
+        标题：<input type="text" name="article" class="form-control" style="width: 30%"><br/>
+        内容：<textarea name="content"></textarea><br/>
+        <input type="submit" value="发表帖子" class="btn btn-primary btn-lg">
+    </form>
+
+
+
+{% endblock personinner %}

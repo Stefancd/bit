@@ -4,6 +4,22 @@ from app import views
 
 urlpatterns = [
     url(r'^index/$',views.index),
+    # url(r'^baseposts/(?P<bid>\d+)/(?P<sid>\d+)/$',views.baseposts),
+    url(r'^baseposts/(?P<bid>\d+)/$',views.baseposts,name='baseposts'),
+    url(r'^postslist/(?P<sid>\d+)/$',views.postslist,name='postslist'),
+    url(r'^postdetail/(?P<pid>\d+)/$',views.postdetail,name='postdetail'),
+    # url(r'^postdetail/(?P<sid>\d+)/$',views.postdetail,name='postdetail'),
+    url(r'^posting/$', views.posting, name='posting'),
+
+    # url(r'^bstitle/$',views.bstitle)
+    # url(r'^reply/(?P<sid>\d+)/$', views.reply, name='reply'),
+    url(r'^writing/(?P<sid>\d+)/$', views.writing, name='writing'),
+    url(r'^reply/(?P<pid>\d+)/$', views.reply, name='reply'),
+    url(r'^goods/(?P<pid>\d+)/$', views.goods, name='goods'),
+    url(r'^active/$', views.active, name='active'),
+    url(r'^reactive/$', views.reactive, name='reactive'),
+
+
     url(r'^login/$',views.login,name='login'),
     url(r'^logout/$',views.logout,name='logout'),
     url(r'^register/$',views.register,name='register'),
@@ -28,7 +44,7 @@ urlpatterns = [
 
 
     url(r'^bsprivacy/$', views.bsprivacy),
-    url(r'^bsprivacy/$', views.bsprivacy),
+    # url(r'^bsprivacy/$', views.bsprivacy),
 
 
 
@@ -37,8 +53,11 @@ urlpatterns = [
 
 
     url(r'^verifycode/$', views.verifycode),
+    url(r'^search/$', views.search,name='search'),
     # url(r'^post/(?P<pk>\d+)$', views.post),
 
-    # url(r'^bstitle/$',views.bstitle)
+
+
+
 
 ]

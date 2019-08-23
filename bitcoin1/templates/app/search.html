@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block inner %}
+<ul>
+    {% for result in results %}
+    <li><h2 style="font-size: 20px"><a href="http://127.0.0.1:8000/postdetail/{{ result.id }}/">{{ result.article }}---作者：{{ result.author.username }}</a></h2></li>
+    {% endfor %}
+</ul>
+
+
+{% endblock inner %}

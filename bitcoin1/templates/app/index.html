@@ -1,5 +1,7 @@
 {% extends 'app/base.html' %}
 
+{% load myTag %}
+
 {% block inner %}
 <div id="wp" class="wp">
     <style id="diy_style" type="text/css"></style>
@@ -66,7 +68,10 @@
 <img id="category_1_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开"
      onclick="toggle_collapse('category_1');">
 </span>
-                        <h2><a href="forum.php?gid=1" style="">{{ bt.btitle }}</a></h2>
+<!--                        <h2><a href="forum.php?gid=1" style="">{{ bt.btitle }}</a></h2>-->
+<!--                        <h2><a href="http://127.0.0.1:8000/baseposts/{{ bt.bid }}/1" style="">{{ bt.btitle }}</a></h2>-->
+                        <h2><a href="http://127.0.0.1:8000/baseposts/{{ bt.bid }}/" style="">{{ bt.btitle }}</a></h2>
+<!--                        <h2><a href="{% url 'app:baseposts' bt.bid %}" style="">{{ bt.btitle }}</a></h2>-->
 
                     </div>
                     <div id="category_1" class="bm_c" style="">
@@ -77,13 +82,16 @@
                             {% if st.bid == bt.bid %}
                             <tr>
                                 <td class="fl_icn">
-                                    <a href="forum.php?mod=forumdisplay&amp;fid=2"><img
+<!--                                    <a href="forum.php?mod=forumdisplay&amp;fid=2"><img-->
+                                    <a href=""><img
                                             src="static/image/common/forum_new.gif" alt="BTC (Bitcoin)-比特币"></a>
                                 </td>
                                 <td>
 
-                                    <h2><a href="forum.php?mod=forumdisplay&amp;fid=2">{{ st.stitle }}</a><em
-                                            class="xw0 xi1" title="今日"> (177)</em></h2>
+<!--                                    <h2><a href="forum.php?mod=forumdisplay&amp;fid=2">{{ st.stitle }}</a><em-->
+                                    <h2><a href="http://127.0.0.1:8000/postslist/{{ st.sid }}/">{{ st.stitle }}</a><em
+                                            class="xw0 xi1" title="今日"> ({% get_num st.sid %})</em></h2>
+<!--                                            class="xw0 xi1" title="今日"> ()</em></h2>-->
                                 </td>
                                 <td class="fl_i">
                                     <span class="xi2"><span title="14095">1万</span></span><span class="xg1"> / <span

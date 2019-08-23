@@ -6,8 +6,9 @@ from tinymce.models import HTMLField
 
 class User(models.Model):
     username = models.CharField(max_length=20)
-    password = models.CharField(max_length=20)
+    password = models.CharField(max_length=256)
     email = models.CharField(max_length=30)
+    isActive = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'users'
@@ -29,9 +30,37 @@ class Post(models.Model):
     author = models.ForeignKey('User')
     time1 = models.DateTimeField(auto_now_add=True)
     stitle = models.ForeignKey('BsTitle',to_field='sid')
+
     class Meta:
         db_table = 'posts'
 
+    @classmethod
+    def create(cls, article,content,author,stitle):
+        return cls(article=article,content=content,author=author,stitle=stitle)
 
+
+class Reply(models.Model):
+    post = models.ForeignKey('Post')
+    user = models.ForeignKey('User')
+    content = models.CharField(max_length=200)
+    create_time = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'replies'
+
+    @classmethod
+    def create(cls, content,post,user):
+        return cls(content=content,post=post,user=user)
+
+class Good(models.Model):
+    post = models.ForeignKey('Post')
+    user = models.ForeignKey('User')
+
+    class Meta:
+        db_table = 'goods'
+
+    @classmethod
+    def create(cls,post,user):
+        return cls(post=post,user=user)
 
 
